@@ -742,6 +742,23 @@ button {
   font-weight: 700;
 }
 
+.badge.requirement-client {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  font-size: 10px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+.badge.requirement-growisto {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+  font-size: 10px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
 .badge.optional {
   background: #f1f5f9;
   color: #475569;
