@@ -247,6 +247,43 @@ button {
   margin-top: 4px;
 }
 
+/* Sidebar dual-logo layout */
+.sidebar-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sidebar-logos .sidebar-logo {
+  max-width: 100px;
+  margin-bottom: 0;
+}
+
+.sidebar-logo-divider {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  flex-shrink: 0;
+}
+
+.sidebar-client-logo-wrap {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar-client-logo {
+  width: 48px;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
 .sidebar-nav {
   flex: 1;
   padding: 12px 0;
@@ -385,6 +422,31 @@ button {
   color: var(--color-text-light);
   font-size: 14px;
   font-weight: 600;
+}
+
+/* Mobile header dual-logo */
+.mobile-logo-divider {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  margin: 0 2px;
+}
+
+.mobile-client-logo-wrap {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mobile-client-logo {
+  width: 28px;
+  height: auto;
+  display: block;
+  border-radius: 2px;
 }
 
 .sidebar-overlay {
@@ -878,6 +940,79 @@ button {
   width: 80px;
   flex-shrink: 0;
   text-align: center;
+}
+
+/* Funnel Header Row */
+.funnel-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.funnel-header-label {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.funnel-header-track {
+  flex: 1;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+}
+
+.funnel-header-value {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  width: 80px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.funnel-header-drop {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  width: 80px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* Estimated row badge */
+.est-badge {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f59e0b;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 3px;
+  padding: 1px 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Estimated row subtle visual treatment */
+.funnel-bar.estimated .funnel-track {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f1f5f9,
+    #f1f5f9 4px,
+    #f5f7fa 4px,
+    #f5f7fa 8px
+  );
 }
 
 /* ============================================================
@@ -1742,6 +1877,10 @@ button {
     width: 100%;
     text-align: left;
     font-weight: 600;
+  }
+
+  .funnel-header {
+    display: none;
   }
 
   .mockup-container.mobile {

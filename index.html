@@ -37,7 +37,10 @@
       <span></span><span></span><span></span>
     </div>
     <img src="assets/growisto-logo-white.png" alt="Growisto" class="mobile-logo">
-    <span class="mobile-title">KLF Nirmal</span>
+    <span class="mobile-logo-divider">&times;</span>
+    <div class="mobile-client-logo-wrap">
+      <img src="assets/klf-nirmal-logo.jpeg" alt="KLF Nirmal" class="mobile-client-logo">
+    </div>
   </div>
   <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
@@ -46,7 +49,13 @@
        ============================================================ -->
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <img src="assets/growisto-logo-white.png" alt="Growisto" class="sidebar-logo">
+      <div class="sidebar-logos">
+        <img src="assets/growisto-logo-white.png" alt="Growisto" class="sidebar-logo">
+        <span class="sidebar-logo-divider">&times;</span>
+        <div class="sidebar-client-logo-wrap">
+          <img src="assets/klf-nirmal-logo.jpeg" alt="KLF Nirmal" class="sidebar-client-logo">
+        </div>
+      </div>
       <div class="sidebar-client">KLF NIRMAL</div>
       <div class="sidebar-project">Store Revamp Proposal</div>
     </div>
@@ -269,6 +278,12 @@
         <!-- Conversion Funnel -->
         <h2 class="mb-20">Conversion Funnel</h2>
         <div class="funnel-container mb-32">
+          <div class="funnel-header">
+            <div class="funnel-header-label"></div>
+            <div class="funnel-header-track">Visitors</div>
+            <div class="funnel-header-value">% of Total</div>
+            <div class="funnel-header-drop">Drop-off</div>
+          </div>
           <div class="funnel-bar">
             <div class="funnel-label">Monthly Visits</div>
             <div class="funnel-track">
@@ -285,38 +300,54 @@
             <div class="funnel-value">34.12%</div>
             <div class="funnel-drop">-65.88%</div>
           </div>
-          <div class="funnel-bar">
-            <div class="funnel-label">PDP Views</div>
+          <div class="funnel-bar estimated">
+            <div class="funnel-label">PDP Views <span class="est-badge">EST</span></div>
             <div class="funnel-track">
               <div class="funnel-fill stage-3" style="width: 15.6%;">~4,100</div>
             </div>
             <div class="funnel-value">15.6%</div>
             <div class="funnel-drop">-18.5%</div>
           </div>
-          <div class="funnel-bar">
-            <div class="funnel-label">Added to Cart</div>
+          <div class="funnel-bar estimated">
+            <div class="funnel-label">Added to Cart <span class="est-badge">EST</span></div>
             <div class="funnel-track">
               <div class="funnel-fill stage-4" style="width: 3.1%;">~820</div>
             </div>
             <div class="funnel-value">3.1%</div>
             <div class="funnel-drop">-12.5%</div>
           </div>
-          <div class="funnel-bar">
-            <div class="funnel-label">Reached Checkout</div>
+          <div class="funnel-bar estimated">
+            <div class="funnel-label">Reached Checkout <span class="est-badge">EST</span></div>
             <div class="funnel-track">
               <div class="funnel-fill stage-5" style="width: 1.6%;">~410</div>
             </div>
             <div class="funnel-value">1.6%</div>
             <div class="funnel-drop">-1.5%</div>
           </div>
-          <div class="funnel-bar">
-            <div class="funnel-label">Purchased</div>
+          <div class="funnel-bar estimated">
+            <div class="funnel-label">Purchased <span class="est-badge">EST</span></div>
             <div class="funnel-track">
               <div class="funnel-fill stage-6" style="width: 0.7%;">est. ~180</div>
             </div>
             <div class="funnel-value">~0.7%</div>
             <div class="funnel-drop">-0.9%</div>
           </div>
+        </div>
+
+        <div class="callout info mt-16 mb-32">
+          <h4>Data Sources &amp; Methodology</h4>
+          <ul>
+            <li><strong>Verified data:</strong> Monthly visits (26,200) and bounce rate (65.88%) &mdash; sourced from SimilarWeb and available analytics.</li>
+            <li><strong>Estimated data (marked <span class="est-badge" style="vertical-align: baseline;">EST</span>):</strong> PDP views through Purchases are calculated using Food &amp; Beverages industry benchmarks:
+              <ul style="margin-top: 4px; list-style: circle;">
+                <li>Add to Cart rate: 3&ndash;5% of total visits (industry avg)</li>
+                <li>Cart abandonment: ~75% of carts</li>
+                <li>Checkout completion: ~40% of those reaching checkout</li>
+                <li>Food &amp; Bev CVR benchmark: 2.5&ndash;4%</li>
+              </ul>
+            </li>
+            <li><strong>Next step:</strong> These estimates will be replaced with actual data once GA4 and Shopify analytics access is provided.</li>
+          </ul>
         </div>
 
         <!-- Feature Gaps Identified -->
