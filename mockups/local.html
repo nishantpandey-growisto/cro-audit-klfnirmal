@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLF Nirmal — Pure Since 1946 | Local Theme Concept</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: 'Poppins', sans-serif; color: #1A1A1A; background: #FAF3E0; line-height: 1.6; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; transition: color 0.3s; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; font-family: inherit; }
+ul { list-style: none; }
+
+/* ========== CSS VARIABLES ========== */
+:root {
+  --brown: #3E2723;
+  --cream: #FAF3E0;
+  --copper: #BF6C3B;
+  --dark: #1A1A1A;
+  --warm-bg: #F5E6D3;
+  --warm-light: #FDF8F0;
+  --warm-border: #D4A574;
+  --text-muted: #6D5D4B;
+  --shadow: 0 2px 12px rgba(62,39,35,0.08);
+  --shadow-hover: 0 8px 30px rgba(62,39,35,0.15);
+  --radius: 6px;
+  --transition: 0.3s ease;
+}
+
+/* ========== MOCKUP BANNER ========== */
+.mockup-banner {
+  background: #E8E0D4;
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #6D5D4B;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #D4C8B8;
+}
+
+/* ========== ANNOUNCEMENT BAR ========== */
+.announcement-bar {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+.announcement-bar strong { color: var(--copper); font-weight: 600; }
+.announcement-bar code {
+  background: rgba(191,108,59,0.25);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #F5D0A9;
+  letter-spacing: 1px;
+}
+
+/* ========== TOP BAR ========== */
+.top-bar {
+  background: var(--brown);
+  color: #D4A574;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 40px;
+  font-size: 12px;
+}
+.top-bar-left { display: flex; align-items: center; gap: 14px; }
+.top-bar-left a { color: #D4A574; font-size: 14px; transition: color 0.3s; }
+.top-bar-left a:hover { color: #FAF3E0; }
+.top-bar-right { display: flex; align-items: center; gap: 16px; }
+.currency-select {
+  background: transparent;
+  border: 1px solid rgba(212,165,116,0.3);
+  color: #D4A574;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+  background: var(--cream);
+  border-bottom: 1px solid #E8D5C0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  padding: 16px 40px;
+  gap: 24px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--brown);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D4A574;
+  font-size: 22px;
+}
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--brown);
+  letter-spacing: -0.5px;
+}
+.logo-text span { display: block; font-size: 10px; font-family: 'Poppins', sans-serif; font-weight: 400; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; }
+
+/* Large search bar - LOCAL THEME signature */
+.header-search {
+  flex: 1;
+  max-width: 520px;
+  position: relative;
+}
+.header-search input {
+  width: 100%;
+  padding: 12px 48px 12px 20px;
+  border: 2px solid var(--brown);
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: var(--dark);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.header-search input::placeholder { color: #A89580; }
+.header-search input:focus { outline: none; border-color: var(--copper); box-shadow: 0 0 0 3px rgba(191,108,59,0.15); }
+.header-search-btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.header-search-btn:hover { background: var(--copper); }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.header-action-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--brown);
+  transition: color 0.3s;
+}
+.header-action-link:hover { color: var(--copper); }
+.header-action-link .icon { font-size: 20px; }
+.cart-count {
+  background: var(--copper);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+  margin-top: -8px;
+}
+.delivery-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--copper);
+  border: 1px solid var(--copper);
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.delivery-link:hover { background: var(--copper); color: #fff; }
+
+/* Navigation */
+.nav-bar {
+  background: var(--warm-light);
+  border-top: 1px solid #E8D5C0;
+  border-bottom: 2px solid var(--brown);
+}
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  gap: 0;
+}
+.nav-link {
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brown);
+  letter-spacing: 0.3px;
+  transition: all 0.3s;
+  position: relative;
+}
+.nav-link:hover { color: var(--copper); background: rgba(191,108,59,0.06); }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--copper);
+  transition: width 0.3s;
+}
+.nav-link:hover::after { width: 60%; }
+.nav-dropdown { font-size: 10px; margin-left: 4px; opacity: 0.6; }
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+  overflow: hidden;
+}
+.hero-text {
+  background: linear-gradient(135deg, var(--warm-bg) 0%, #EDD9C4 100%);
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-subtitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--brown);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.hero-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  max-width: 420px;
+  line-height: 1.7;
+}
+.btn-shop-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--dark);
+  color: #fff;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.3s;
+  width: fit-content;
+}
+.btn-shop-now:hover { background: var(--brown); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,26,26,0.3); }
+.btn-shop-now .arrow { transition: transform 0.3s; }
+.btn-shop-now:hover .arrow { transform: translateX(4px); }
+.hero-image {
+  background: linear-gradient(135deg, #D4A574 0%, #C4915A 50%, #A87B4F 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-product-display {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-product-bottle {
+  width: 200px;
+  height: 320px;
+  background: linear-gradient(180deg, #F5E6D3, #E8D5C0);
+  border-radius: 20px 20px 8px 8px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(62,39,35,0.25);
+  position: relative;
+}
+.hero-product-bottle::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 30px;
+  background: var(--brown);
+  border-radius: 4px 4px 0 0;
+}
+.hero-bottle-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--brown);
+  font-weight: 700;
+}
+.hero-bottle-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.hero-bottle-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.hero-float-badge {
+  position: absolute;
+  background: var(--brown);
+  color: var(--cream);
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.hero-float-badge.top-right { top: 60px; right: 40px; }
+.hero-float-badge.bottom-left { bottom: 60px; left: 40px; }
+.hero-bg-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(250,243,224,0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-bg-circle.sm { width: 300px; height: 300px; }
+
+/* ========== TRUST STRIP ========== */
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid var(--brown);
+  border-bottom: 2px solid var(--brown);
+  background: var(--cream);
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 22px 20px;
+  border-right: 1px solid #E8D5C0;
+  transition: background 0.3s;
+}
+.trust-item:last-child { border-right: none; }
+.trust-item:hover { background: var(--warm-bg); }
+.trust-icon { font-size: 28px; flex-shrink: 0; }
+.trust-text { font-size: 13px; font-weight: 600; color: var(--brown); letter-spacing: 0.3px; }
+.trust-sub { font-size: 11px; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
+
+/* ========== SECTION HEADERS ========== */
+.section { padding: 70px 40px; }
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--copper);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--brown);
+  margin-bottom: 12px;
+}
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--copper);
+  margin: 0 auto;
+}
+
+/* ========== SHOP BY BRAND ========== */
+.brands-section { background: var(--warm-light); }
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+.brand-card {
+  background: var(--cream);
+  border: 2px solid #E8D5C0;
+  border-radius: var(--radius);
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.brand-card:hover { border-color: var(--copper); transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.brand-logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+.brand-card:nth-child(1) .brand-logo-circle { background: #E8F5E9; }
+.brand-card:nth-child(2) .brand-logo-circle { background: #FFF8E1; }
+.brand-card:nth-child(3) .brand-logo-circle { background: #FBE9E7; }
+.brand-card:nth-child(4) .brand-logo-circle { background: #E0F2F1; }
+.brand-card:nth-child(5) .brand-logo-circle { background: #F3E5F5; }
+.brand-card:nth-child(6) .brand-logo-circle { background: #E3F2FD; }
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 6px;
+}
+.brand-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.brand-link {
+  font-size: 12px;
+  color: var(--copper);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.3s;
+}
+.brand-card:hover .brand-link { gap: 8px; }
+
+/* ========== BEST SELLERS ========== */
+.bestsellers-section { background: var(--cream); }
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.product-card {
+  background: #fff;
+  border: 2px solid var(--brown);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s;
+  position: relative;
+}
+.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  z-index: 5;
+}
+.badge-sale { background: #C62828; color: #fff; }
+.badge-popular { background: var(--copper); color: #fff; }
+.badge-discount { background: var(--brown); color: var(--cream); }
+.product-image-wrap {
+  position: relative;
+  background: linear-gradient(135deg, #F5E6D3, #EDD9C4);
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-icon-large { font-size: 80px; opacity: 0.9; }
+.product-quick-buy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+.product-card:hover .product-quick-buy { transform: translateY(0); }
+
+/* Nutritional info on hover */
+.nutrition-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(62,39,35,0.92);
+  color: var(--cream);
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  font-size: 10px;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.3s;
+  z-index: 6;
+  pointer-events: none;
+}
+.product-card:hover .nutrition-overlay { opacity: 1; transform: translateY(0); }
+.nutrition-overlay .nut-title {
+  font-weight: 600;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(212,165,116,0.3);
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.product-info {
+  padding: 18px;
+}
+.product-brand-tag {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--copper);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.product-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.stars { color: #E8A04A; font-size: 13px; letter-spacing: 1px; }
+.rating-count { font-size: 11px; color: var(--text-muted); }
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.price-current {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brown);
+}
+.price-original {
+  font-size: 14px;
+  color: #A89580;
+  text-decoration: line-through;
+}
+.price-discount {
+  font-size: 11px;
+  color: #C62828;
+  font-weight: 600;
+  background: #FFEBEE;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.product-sizes {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.size-option {
+  padding: 4px 12px;
+  border: 1px solid #D4C8B8;
+  border-radius: 3px;
+  font-size: 11px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.size-option.active, .size-option:hover { border-color: var(--brown); color: var(--brown); background: var(--warm-bg); }
+.btn-add-cart {
+  width: 100%;
+  padding: 12px;
+  background: var(--cream);
+  border: 2px solid var(--brown);
+  color: var(--brown);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.btn-add-cart:hover { background: var(--brown); color: var(--cream); }
+
+/* ========== RECIPES SECTION ========== */
+.recipes-section { background: var(--warm-bg); }
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.recipe-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #E8D5C0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.recipe-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.recipe-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  position: relative;
+}
+.recipe-card:nth-child(1) .recipe-image { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); }
+.recipe-card:nth-child(2) .recipe-image { background: linear-gradient(135deg, #FFF8E1, #FFECB3); }
+.recipe-card:nth-child(3) .recipe-image { background: linear-gradient(135deg, #FBE9E7, #FFCCBC); }
+.recipe-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: var(--brown);
+  color: var(--cream);
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.recipe-content { padding: 24px; }
+.recipe-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.recipe-desc { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.6; }
+.recipe-link {
+  font-size: 13px;
+  color: var(--copper);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.3s;
+}
+.recipe-card:hover .recipe-link { gap: 10px; }
+
+/* ========== CATEGORY GRID ========== */
+.categories-section { background: var(--cream); }
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.category-card {
+  background: var(--warm-light);
+  border: 2px solid #E8D5C0;
+  border-radius: 8px;
+  padding: 32px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.category-card:hover { border-color: var(--copper); background: #fff; transform: translateY(-3px); box-shadow: var(--shadow); }
+.category-icon { font-size: 40px; margin-bottom: 14px; }
+.category-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 4px;
+}
+.category-count { font-size: 11px; color: var(--text-muted); }
+.category-arrow {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-size: 16px;
+  color: var(--copper);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.3s;
+}
+.category-card:hover .category-arrow { opacity: 1; transform: translateX(0); }
+
+/* ========== HERITAGE SECTION ========== */
+.heritage-section {
+  background: var(--brown);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+.heritage-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='rgba(212,165,116,0.06)' stroke-width='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.heritage-content { position: relative; z-index: 2; }
+.heritage-section .section-label { color: #D4A574; }
+.heritage-section .section-title { color: var(--cream); }
+.heritage-section .section-divider { background: #D4A574; }
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: rgba(212,165,116,0.3);
+}
+.timeline-item { text-align: center; position: relative; }
+.timeline-dot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--copper);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto 18px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 6px rgba(191,108,59,0.2);
+}
+.timeline-year {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #D4A574;
+  margin-bottom: 6px;
+}
+.timeline-event {
+  font-size: 14px;
+  color: rgba(250,243,224,0.8);
+  max-width: 180px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ========== TESTIMONIALS ========== */
+.testimonials-section { background: var(--warm-light); }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #E8D5C0;
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: all 0.3s;
+  position: relative;
+}
+.testimonial-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+.testimonial-quote {
+  font-size: 48px;
+  color: var(--copper);
+  opacity: 0.3;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.testimonial-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.testimonial-stars { color: #E8A04A; font-size: 14px; margin-bottom: 14px; letter-spacing: 2px; }
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--warm-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brown);
+  font-family: 'Playfair Display', serif;
+}
+.testimonial-name { font-size: 14px; font-weight: 600; color: var(--brown); }
+.testimonial-location { font-size: 11px; color: var(--text-muted); }
+.testimonial-verified {
+  font-size: 10px;
+  color: #2E7D32;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+/* ========== SUBSCRIBE & SAVE ========== */
+.subscribe-section {
+  background: linear-gradient(135deg, var(--copper) 0%, #A0612F 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 40px;
+}
+.subscribe-section .section-label { color: rgba(255,255,255,0.7); }
+.subscribe-section .section-title { color: #fff; font-size: 32px; }
+.subscribe-section .section-divider { background: rgba(255,255,255,0.4); }
+.subscribe-desc { max-width: 500px; margin: 0 auto 32px; font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.7; }
+.subscribe-perks {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.subscribe-perk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.subscribe-perk .icon { font-size: 20px; }
+.btn-subscribe {
+  background: #fff;
+  color: var(--brown);
+  padding: 16px 48px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.btn-subscribe:hover { background: var(--dark); color: #fff; transform: translateY(-2px); }
+
+/* ========== NEWSLETTER ========== */
+.newsletter-section {
+  background: var(--cream);
+  text-align: center;
+  padding: 60px 40px;
+  border-top: 2px solid var(--brown);
+}
+.newsletter-form {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+  gap: 0;
+}
+.newsletter-input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid var(--brown);
+  border-right: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+.newsletter-input::placeholder { color: #A89580; }
+.newsletter-input:focus { outline: none; }
+.newsletter-btn {
+  padding: 14px 32px;
+  background: var(--dark);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+.newsletter-btn:hover { background: var(--brown); }
+.newsletter-note { font-size: 11px; color: var(--text-muted); margin-top: 12px; }
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background: var(--dark);
+  color: rgba(250,243,224,0.7);
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding: 60px 40px;
+}
+.footer-logo .logo-icon { background: var(--copper); color: var(--cream); }
+.footer-logo .logo-text { color: var(--cream); }
+.footer-logo .logo-text span { color: rgba(250,243,224,0.5); }
+.footer-about { font-size: 13px; color: rgba(250,243,224,0.6); margin-top: 16px; line-height: 1.7; }
+.footer-social { display: flex; gap: 12px; margin-top: 20px; }
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,165,116,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D4A574;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.footer-social a:hover { background: var(--copper); border-color: var(--copper); color: #fff; }
+.footer-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(212,165,116,0.15);
+}
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { font-size: 13px; color: rgba(250,243,224,0.55); transition: color 0.3s; }
+.footer-links a:hover { color: var(--copper); }
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: rgba(250,243,224,0.6);
+}
+.footer-contact-item .icon { color: var(--copper); font-size: 16px; margin-top: 2px; }
+.footer-bottom {
+  border-top: 1px solid rgba(212,165,116,0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-bottom-left { font-size: 12px; color: rgba(250,243,224,0.4); }
+.footer-certifications {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-cert {
+  padding: 4px 12px;
+  border: 1px solid rgba(212,165,116,0.2);
+  border-radius: 3px;
+  font-size: 10px;
+  color: rgba(250,243,224,0.5);
+  letter-spacing: 0.5px;
+}
+.footer-payments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.payment-icon {
+  background: rgba(250,243,224,0.08);
+  border: 1px solid rgba(250,243,224,0.1);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: rgba(250,243,224,0.5);
+  font-weight: 500;
+}
+
+/* ========== MOBILE NAV TOGGLE ========== */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--brown);
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* ========== SCROLL TO TOP ========== */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(62,39,35,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  cursor: pointer;
+}
+.scroll-top.visible { opacity: 1; visibility: visible; }
+.scroll-top:hover { background: var(--copper); transform: translateY(-3px); }
+
+/* ========== ANIMATIONS ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .brands-grid { grid-template-columns: repeat(3, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-main { grid-template-columns: repeat(3, 1fr); }
+  .hero-title { font-size: 40px; }
+}
+
+@media (max-width: 768px) {
+  .top-bar { display: none; }
+  .header-main { padding: 12px 16px; gap: 12px; flex-wrap: wrap; }
+  .logo-text { font-size: 20px; }
+  .logo-icon { width: 36px; height: 36px; font-size: 18px; }
+  .header-search { order: 3; flex-basis: 100%; max-width: none; }
+  .header-search input { padding: 10px 44px 10px 16px; font-size: 13px; }
+  .header-search-btn { width: 34px; height: 34px; font-size: 14px; }
+  .delivery-link { display: none; }
+  .mobile-menu-btn { display: block; }
+  .nav-bar { display: none; }
+  .nav-bar.open { display: block; }
+  .nav-inner { flex-direction: column; padding: 0; }
+  .nav-link { padding: 14px 20px; text-align: left; width: 100%; border-bottom: 1px solid #E8D5C0; }
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-text { padding: 40px 20px; text-align: center; }
+  .hero-title { font-size: 34px; }
+  .hero-desc { margin: 0 auto 28px; font-size: 14px; }
+  .btn-shop-now { margin: 0 auto; }
+  .hero-image { height: 300px; }
+  .hero-product-bottle { width: 140px; height: 220px; }
+  .hero-bottle-icon { font-size: 32px; }
+  .hero-float-badge { display: none; }
+  .trust-strip { grid-template-columns: repeat(2, 1fr); }
+  .trust-item { padding: 16px 12px; gap: 10px; }
+  .trust-icon { font-size: 22px; }
+  .trust-text { font-size: 11px; }
+  .section { padding: 40px 16px; }
+  .section-title { font-size: 26px; }
+  .brands-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .brand-card { padding: 20px 14px; }
+  .brand-logo-circle { width: 56px; height: 56px; font-size: 24px; }
+  .brand-name { font-size: 14px; }
+  .products-grid { grid-template-columns: 1fr; gap: 16px; }
+  .product-image-wrap { height: 220px; }
+  .recipes-grid { grid-template-columns: 1fr; }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .category-card { padding: 24px 14px; }
+  .timeline { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .timeline::before { display: none; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .subscribe-perks { flex-direction: column; gap: 16px; align-items: center; }
+  .newsletter-form { flex-direction: column; gap: 0; }
+  .newsletter-input { border-right: 2px solid var(--brown); border-bottom: none; }
+  .footer-main { grid-template-columns: 1fr; gap: 28px; padding: 40px 16px; }
+  .footer-bottom { flex-direction: column; text-align: center; padding: 16px; }
+  .mockup-banner { font-size: 10px; padding: 6px 12px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 28px; }
+  .brands-grid { grid-template-columns: 1fr 1fr; }
+  .categories-grid { grid-template-columns: 1fr 1fr; }
+  .trust-strip { grid-template-columns: 1fr 1fr; }
+  .trust-sub { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- MOCKUP BANNER -->
+<div class="mockup-banner">
+  &#127912; Homepage Concept: Local Theme (Caffeine Preset) &nbsp;|&nbsp; Prepared by Growisto for KLF Nirmal &nbsp;|&nbsp; February 2026
+</div>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  Save <strong>15%</strong> on your first order &mdash; use code: <code>NIRMAL15</code> &nbsp;&bull;&nbsp; Free shipping on orders above &#8377;499
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <a href="#" title="Facebook">&#9830;</a>
+    <a href="#" title="Instagram">&#9733;</a>
+    <a href="#" title="Pinterest">&#9827;</a>
+    <span style="opacity:0.5;">|</span>
+    <span style="font-size:11px;">Pure Since 1946 &mdash; From Kerala's Coconut Heartland</span>
+  </div>
+  <div class="top-bar-right">
+    <span style="font-size:11px;">&#128222; 1800-123-NIRMAL</span>
+    <select class="currency-select">
+      <option>INR &#8377;</option>
+      <option>USD $</option>
+    </select>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-main">
+    <a href="#" class="logo">
+      <div class="logo-icon">&#127796;</div>
+      <div class="logo-text">
+        KLF Nirmal
+        <span>Pure Coconut Goodness</span>
+      </div>
+    </a>
+
+    <div class="header-search">
+      <input type="text" placeholder="Search for coconut oil, VCO, sesame oil, soaps...">
+      <button class="header-search-btn" aria-label="Search">&#128269;</button>
+    </div>
+
+    <div class="header-actions">
+      <a href="#" class="delivery-link">
+        &#128666; Need delivery? See estimates
+      </a>
+      <a href="#" class="header-action-link">
+        <span class="icon">&#128100;</span>
+        <span>Account</span>
+      </a>
+      <a href="#" class="header-action-link" style="position:relative;">
+        <span class="icon">&#128722;</span>
+        <span>&#8377;0.00</span>
+        <span class="cart-count">0</span>
+      </a>
+      <button class="mobile-menu-btn" onclick="document.querySelector('.nav-bar').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+
+  <nav class="nav-bar" id="mainNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-link">Shop <span class="nav-dropdown">&#9662;</span></a>
+      <a href="#" class="nav-link">Recipes &amp; Tips</a>
+      <a href="#" class="nav-link">Our Story</a>
+      <a href="#" class="nav-link">Brands <span class="nav-dropdown">&#9662;</span></a>
+      <a href="#" class="nav-link">Bulk Orders</a>
+      <a href="#" class="nav-link">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-subtitle">From Kerala's Coconut Heartland</div>
+    <h1 class="hero-title">Pure Coconut<br>Goodness</h1>
+    <p class="hero-desc">Cold-pressed using traditional methods perfected over 80 years. Every drop carries the essence of Kerala's finest coconuts.</p>
+    <a href="#" class="btn-shop-now">
+      Shop Now <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+  <div class="hero-image">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle sm"></div>
+    <div class="hero-product-display">
+      <div class="hero-product-bottle">
+        <span class="hero-bottle-icon">&#127796;</span>
+        <span class="hero-bottle-label">KLF Nirmal</span>
+        <span class="hero-bottle-sub">Pure Coconut Oil</span>
+      </div>
+    </div>
+    <div class="hero-float-badge top-right">&#127942; 80 Years of Trust</div>
+    <div class="hero-float-badge bottom-left">&#127807; 100% Natural</div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <span class="trust-icon">&#127942;</span>
+    <div>
+      <div class="trust-text">Award-Winning Quality</div>
+      <div class="trust-sub">Trusted since 1946</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">&#127796;</span>
+    <div>
+      <div class="trust-text">Kerala's Finest Coconuts</div>
+      <div class="trust-sub">From sustainable sources</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">&#128666;</span>
+    <div>
+      <div class="trust-text">Pan-India Delivery</div>
+      <div class="trust-sub">Free above &#8377;499</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">&#128274;</span>
+    <div>
+      <div class="trust-text">Secure Shopping</div>
+      <div class="trust-sub">100% safe payments</div>
+    </div>
+  </div>
+</div>
+
+<!-- SHOP BY BRAND -->
+<section class="section brands-section fade-in">
+  <div class="section-header">
+    <div class="section-label">Our Family of Brands</div>
+    <h2 class="section-title">Shop by Brand</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#129379;</div>
+      <div class="brand-name">Coconad</div>
+      <div class="brand-desc">Coconut Milk &amp; Cream</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#10024;</div>
+      <div class="brand-name">Nirmal VCO</div>
+      <div class="brand-desc">Virgin Coconut Oil</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#127793;</div>
+      <div class="brand-name">Tilnad</div>
+      <div class="brand-desc">Sesame Oil</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#127796;</div>
+      <div class="brand-name">Nirmal</div>
+      <div class="brand-desc">Pure Coconut Oil</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#128140;</div>
+      <div class="brand-name">Cocosoft</div>
+      <div class="brand-desc">Soaps &amp; Personal Care</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo-circle">&#127859;</div>
+      <div class="brand-name">Cocodaily</div>
+      <div class="brand-desc">Multi-Source Edible Oil</div>
+      <span class="brand-link">View Products <span>&rarr;</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="section bestsellers-section fade-in">
+  <div class="section-header">
+    <div class="section-label">Most Loved Products</div>
+    <h2 class="section-title">Best Sellers</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="products-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <span class="product-badge badge-sale">Sale</span>
+      <div class="product-image-wrap">
+        <span class="product-icon-large">&#127796;</span>
+        <div class="nutrition-overlay">
+          <div class="nut-title">Nutritional Info (per 15ml)</div>
+          <div>Calories: 120 kcal</div>
+          <div>Total Fat: 14g</div>
+          <div>Saturated Fat: 12g</div>
+          <div>Lauric Acid: 6.5g</div>
+          <div>Trans Fat: 0g</div>
+        </div>
+        <div class="product-quick-buy">Quick Buy</div>
+      </div>
+      <div class="product-info">
+        <div class="product-brand-tag">Nirmal</div>
+        <div class="product-name">Pure Coconut Oil 1L</div>
+        <div class="product-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-count">(1,247)</span>
+        </div>
+        <div class="product-price">
+          <span class="price-current">&#8377;299</span>
+          <span class="price-original">&#8377;399</span>
+          <span class="price-discount">25% OFF</span>
+        </div>
+        <div class="product-sizes">
+          <span class="size-option">200ml</span>
+          <span class="size-option">500ml</span>
+          <span class="size-option active">1L</span>
+          <span class="size-option">5L</span>
+        </div>
+        <button class="btn-add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <span class="product-badge badge-popular">Popular</span>
+      <div class="product-image-wrap" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9);">
+        <span class="product-icon-large">&#129379;</span>
+        <div class="nutrition-overlay">
+          <div class="nut-title">Nutritional Info (per 100ml)</div>
+          <div>Calories: 197 kcal</div>
+          <div>Total Fat: 21g</div>
+          <div>Carbohydrates: 2.8g</div>
+          <div>Protein: 2.0g</div>
+          <div>Iron: 3.3mg</div>
+        </div>
+        <div class="product-quick-buy">Quick Buy</div>
+      </div>
+      <div class="product-info">
+        <div class="product-brand-tag">Coconad</div>
+        <div class="product-name">Coconut Milk 400ml</div>
+        <div class="product-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-count">(856)</span>
+        </div>
+        <div class="product-price">
+          <span class="price-current">&#8377;149</span>
+        </div>
+        <div class="product-sizes">
+          <span class="size-option">200ml</span>
+          <span class="size-option active">400ml</span>
+        </div>
+        <button class="btn-add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <span class="product-badge badge-discount">25% Off</span>
+      <div class="product-image-wrap" style="background:linear-gradient(135deg,#FFF8E1,#FFECB3);">
+        <span class="product-icon-large">&#10024;</span>
+        <div class="nutrition-overlay">
+          <div class="nut-title">Nutritional Info (per 15ml)</div>
+          <div>Calories: 120 kcal</div>
+          <div>Total Fat: 14g</div>
+          <div>MCT Content: 62%</div>
+          <div>Lauric Acid: 48%</div>
+          <div>No Cholesterol</div>
+        </div>
+        <div class="product-quick-buy">Quick Buy</div>
+      </div>
+      <div class="product-info">
+        <div class="product-brand-tag">Nirmal VCO</div>
+        <div class="product-name">Virgin Coconut Oil 500ml</div>
+        <div class="product-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-count">(623)</span>
+        </div>
+        <div class="product-price">
+          <span class="price-current">&#8377;449</span>
+          <span class="price-original">&#8377;599</span>
+          <span class="price-discount">25% OFF</span>
+        </div>
+        <div class="product-sizes">
+          <span class="size-option">200ml</span>
+          <span class="size-option active">500ml</span>
+          <span class="size-option">1L</span>
+        </div>
+        <button class="btn-add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image-wrap" style="background:linear-gradient(135deg,#FBE9E7,#FFCCBC);">
+        <span class="product-icon-large">&#127793;</span>
+        <div class="nutrition-overlay">
+          <div class="nut-title">Nutritional Info (per 15ml)</div>
+          <div>Calories: 120 kcal</div>
+          <div>Total Fat: 14g</div>
+          <div>Omega-6: 41%</div>
+          <div>Sesamin: Rich</div>
+          <div>Vitamin E: 1.4mg</div>
+        </div>
+        <div class="product-quick-buy">Quick Buy</div>
+      </div>
+      <div class="product-info">
+        <div class="product-brand-tag">Tilnad</div>
+        <div class="product-name">Pure Sesame Oil 1L</div>
+        <div class="product-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="rating-count">(412)</span>
+        </div>
+        <div class="product-price">
+          <span class="price-current">&#8377;349</span>
+        </div>
+        <div class="product-sizes">
+          <span class="size-option">500ml</span>
+          <span class="size-option active">1L</span>
+          <span class="size-option">5L</span>
+        </div>
+        <button class="btn-add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECIPES & LIFESTYLE -->
+<section class="section recipes-section fade-in">
+  <div class="section-header">
+    <div class="section-label">Recipes &amp; Wellness</div>
+    <h2 class="section-title">Cook with KLF Nirmal</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="recipes-grid">
+    <div class="recipe-card">
+      <div class="recipe-image">
+        &#127835;
+        <span class="recipe-tag">Recipe</span>
+      </div>
+      <div class="recipe-content">
+        <div class="recipe-title">Kerala Sadya with Nirmal Coconut Oil</div>
+        <p class="recipe-desc">The traditional feast of Kerala comes alive with the authentic taste of cold-pressed coconut oil. Perfect for Onam &amp; Vishu celebrations.</p>
+        <span class="recipe-link">Read Recipe <span>&rarr;</span></span>
+      </div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image">
+        &#128135;
+        <span class="recipe-tag">Wellness</span>
+      </div>
+      <div class="recipe-content">
+        <div class="recipe-title">Healthy Hair Routine with VCO</div>
+        <p class="recipe-desc">Discover the age-old Kerala secret for lustrous, healthy hair using virgin coconut oil. A natural alternative to chemical treatments.</p>
+        <span class="recipe-link">Read Article <span>&rarr;</span></span>
+      </div>
+    </div>
+    <div class="recipe-card">
+      <div class="recipe-image">
+        &#127798;
+        <span class="recipe-tag">Recipe</span>
+      </div>
+      <div class="recipe-content">
+        <div class="recipe-title">Authentic Chutneys with Tilnad Sesame Oil</div>
+        <p class="recipe-desc">South Indian chutneys get their distinctive nutty flavour from pure sesame oil. Try our grandmother's recipes passed down generations.</p>
+        <span class="recipe-link">Read Recipe <span>&rarr;</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY GRID -->
+<section class="section categories-section fade-in">
+  <div class="section-header">
+    <div class="section-label">Browse Collection</div>
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="categories-grid">
+    <div class="category-card">
+      <div class="category-icon">&#127796;</div>
+      <div class="category-name">Coconut Oil</div>
+      <div class="category-count">24 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#10024;</div>
+      <div class="category-name">Virgin Coconut Oil</div>
+      <div class="category-count">12 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#127793;</div>
+      <div class="category-name">Sesame Oil</div>
+      <div class="category-count">8 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#129379;</div>
+      <div class="category-name">Coconut Milk</div>
+      <div class="category-count">10 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#129532;</div>
+      <div class="category-name">Soaps &amp; Care</div>
+      <div class="category-count">18 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#127858;</div>
+      <div class="category-name">Ready-to-Eat</div>
+      <div class="category-count">6 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#127873;</div>
+      <div class="category-name">Combo Packs</div>
+      <div class="category-count">14 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">&#128230;</div>
+      <div class="category-name">Bulk Packs</div>
+      <div class="category-count">8 Products</div>
+      <span class="category-arrow">&rarr;</span>
+    </div>
+  </div>
+</section>
+
+<!-- HERITAGE SECTION -->
+<section class="section heritage-section fade-in">
+  <div class="heritage-content">
+    <div class="section-header">
+      <div class="section-label">Our Journey</div>
+      <h2 class="section-title">80 Years of Purity &amp; Tradition</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">&#127793;</div>
+        <div class="timeline-year">1946</div>
+        <div class="timeline-event">Founded in Kerala as a small coconut oil mill</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">&#127942;</div>
+        <div class="timeline-year">1970s</div>
+        <div class="timeline-event">Launched Coconad &amp; expanded across South India</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">&#127758;</div>
+        <div class="timeline-year">2000s</div>
+        <div class="timeline-event">National expansion with 6 beloved sub-brands</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">&#128640;</div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-event">Digital-first &mdash; bringing Kerala to every Indian home</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section fade-in">
+  <div class="section-header">
+    <div class="section-label">What Our Customers Say</div>
+    <h2 class="section-title">Trusted by Thousands</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">&ldquo;</div>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testimonial-text">Been using Nirmal coconut oil for over 15 years. The quality has never dropped. My family refuses to use anything else for cooking. The aroma is just unmatched!</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">P</div>
+        <div>
+          <div class="testimonial-name">Priya M.</div>
+          <div class="testimonial-location">Chennai, Tamil Nadu</div>
+          <div class="testimonial-verified">&#10003; Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">&ldquo;</div>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testimonial-text">The VCO is exceptional quality. I use it for oil pulling and cooking both. Ordering the 1L bottle every month through the website &mdash; very convenient and always fresh.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">R</div>
+        <div>
+          <div class="testimonial-name">Rajesh K.</div>
+          <div class="testimonial-location">Bangalore, Karnataka</div>
+          <div class="testimonial-verified">&#10003; Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">&ldquo;</div>
+      <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testimonial-text">Coconad coconut milk is a game-changer for my recipes! Perfect consistency every time. My Malabar chicken curry has never tasted better. Will keep reordering!</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">A</div>
+        <div>
+          <div class="testimonial-name">Anitha S.</div>
+          <div class="testimonial-location">Kochi, Kerala</div>
+          <div class="testimonial-verified">&#10003; Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE & SAVE -->
+<section class="subscribe-section fade-in">
+  <div class="section-label">Never Run Out</div>
+  <h2 class="section-title" style="font-family:'Playfair Display',serif;">Subscribe &amp; Save</h2>
+  <div class="section-divider" style="margin-bottom:24px;"></div>
+  <p class="subscribe-desc">Set up auto-delivery for your favourite KLF Nirmal products. Choose your frequency and save on every order. Cancel anytime.</p>
+  <div class="subscribe-perks">
+    <div class="subscribe-perk"><span class="icon">&#128176;</span> Save 10% on every order</div>
+    <div class="subscribe-perk"><span class="icon">&#128666;</span> Free delivery always</div>
+    <div class="subscribe-perk"><span class="icon">&#128197;</span> Flexible schedule</div>
+    <div class="subscribe-perk"><span class="icon">&#10060;</span> Cancel anytime</div>
+  </div>
+  <button class="btn-subscribe">Start Subscribing &rarr;</button>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section fade-in">
+  <div class="section-header" style="margin-bottom:28px;">
+    <div class="section-label">Stay Connected</div>
+    <h2 class="section-title">Join the KLF Nirmal Family</h2>
+    <div class="section-divider"></div>
+  </div>
+  <p style="max-width:420px;margin:0 auto 24px;font-size:14px;color:var(--text-muted);">Get recipes, wellness tips, exclusive offers &amp; new product updates delivered to your inbox.</p>
+  <form class="newsletter-form" onsubmit="return false;">
+    <input type="email" class="newsletter-input" placeholder="Enter your email address">
+    <button type="submit" class="newsletter-btn">Subscribe</button>
+  </form>
+  <p class="newsletter-note">No spam, ever. Unsubscribe anytime. We respect your privacy.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <!-- Column 1: About -->
+    <div>
+      <a href="#" class="logo footer-logo" style="margin-bottom:4px;">
+        <div class="logo-icon">&#127796;</div>
+        <div class="logo-text">
+          KLF Nirmal
+          <span>Pure Since 1946</span>
+        </div>
+      </a>
+      <p class="footer-about">India's most trusted coconut brand with 80 years of heritage. From Kerala's coconut heartland, we bring purity and tradition to every Indian home.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">&#9733;</a>
+        <a href="#" title="Pinterest">P</a>
+        <a href="#" title="YouTube">&#9654;</a>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#">Shop All Products</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Combo Offers</a></li>
+        <li><a href="#">Bulk Orders</a></li>
+        <li><a href="#">Gift Packs</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Customer Service -->
+    <div>
+      <h4 class="footer-heading">Customer Service</h4>
+      <ul class="footer-links">
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return &amp; Refund</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Our Brands -->
+    <div>
+      <h4 class="footer-heading">Our Brands</h4>
+      <ul class="footer-links">
+        <li><a href="#">Nirmal Coconut Oil</a></li>
+        <li><a href="#">Nirmal VCO</a></li>
+        <li><a href="#">Coconad</a></li>
+        <li><a href="#">Tilnad / Ellunad</a></li>
+        <li><a href="#">Cocosoft</a></li>
+        <li><a href="#">Cocodaily</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 5: Contact -->
+    <div>
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contact-item">
+        <span class="icon">&#128205;</span>
+        <span>KLF Nirmal Industries Pvt Ltd,<br>Irinjalakuda, Thrissur,<br>Kerala 680121, India</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">&#128222;</span>
+        <span>1800-123-NIRMAL (Toll Free)</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">&#9993;</span>
+        <span>care@klfnirmal.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">&#128339;</span>
+        <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      &copy; 2026 KLF Nirmal Industries Pvt Ltd. All rights reserved. &nbsp;|&nbsp; Powered by Shopify
+    </div>
+    <div class="footer-certifications">
+      <span class="footer-cert">FSSAI Certified</span>
+      <span class="footer-cert">ISO 22000</span>
+      <span class="footer-cert">AGMARK</span>
+    </div>
+    <div class="footer-payments">
+      <span class="payment-icon">Visa</span>
+      <span class="payment-icon">MC</span>
+      <span class="payment-icon">UPI</span>
+      <span class="payment-icon">RuPay</span>
+      <span class="payment-icon">COD</span>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">&#8593;</button>
+
+<!-- JAVASCRIPT -->
+<script>
+// Scroll to top button
+const scrollBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    scrollBtn.classList.add('visible');
+  } else {
+    scrollBtn.classList.remove('visible');
+  }
+});
+
+// Fade-in on scroll
+const fadeElements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+fadeElements.forEach(el => observer.observe(el));
+
+// Product size selector
+document.querySelectorAll('.product-sizes').forEach(group => {
+  group.querySelectorAll('.size-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      group.querySelectorAll('.size-option').forEach(o => o.classList.remove('active'));
+      opt.classList.add('active');
+    });
+  });
+});
+
+// Add to cart animation
+document.querySelectorAll('.btn-add-cart, .product-quick-buy').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const orig = this.textContent;
+    this.textContent = 'Added!';
+    this.style.background = '#2E7D32';
+    this.style.color = '#fff';
+    this.style.borderColor = '#2E7D32';
+    setTimeout(() => {
+      this.textContent = orig;
+      this.style.background = '';
+      this.style.color = '';
+      this.style.borderColor = '';
+    }, 1500);
+  });
+});
+
+// Search bar focus animation
+const searchInput = document.querySelector('.header-search input');
+searchInput.addEventListener('focus', () => {
+  searchInput.setAttribute('placeholder', 'Try: "virgin coconut oil", "sesame oil 1L", "coconut milk"...');
+});
+searchInput.addEventListener('blur', () => {
+  searchInput.setAttribute('placeholder', 'Search for coconut oil, VCO, sesame oil, soaps...');
+});
+</script>
+
+</body>
+</html>

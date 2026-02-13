@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLF Nirmal — Pure Since 1946 | Official Online Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ========== RESET & BASE ========== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Poppins',sans-serif;color:#2d2d2d;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;transition:color .3s}
+ul{list-style:none}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:inherit;border:none;outline:none}
+input{font-family:inherit;outline:none}
+.container{max-width:1340px;margin:0 auto;padding:0 24px}
+.section-title{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;text-align:center;margin-bottom:.5rem;color:#1B5E20}
+.section-subtitle{text-align:center;color:#666;font-size:1rem;margin-bottom:2.5rem;font-weight:400}
+
+/* ========== GROWISTO BAR ========== */
+.growisto-bar{background:#f5f5f5;border-bottom:2px solid #367588;padding:6px 0;text-align:center;font-size:.75rem;color:#555;letter-spacing:.3px}
+.growisto-bar span{color:#367588;font-weight:600}
+
+/* ========== ANNOUNCEMENT BAR ========== */
+.announcement-bar{background:#1B5E20;color:#fff;padding:10px 0;text-align:center;font-size:.82rem;letter-spacing:.5px;position:relative;overflow:hidden}
+.announcement-bar .announce-track{display:inline-flex;gap:3rem;animation:marquee 20s linear infinite;white-space:nowrap}
+.announcement-bar strong{color:#C49A3B}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ========== HEADER ========== */
+.header{background:#fff;position:sticky;top:0;z-index:1000;transition:all .3s ease}
+.header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.1)}
+.header-top{display:flex;align-items:center;justify-content:space-between;padding:16px 0;transition:padding .3s}
+.header.scrolled .header-top{padding:10px 0}
+
+/* Logo */
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,#1B5E20,#2E7D32);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;transition:transform .3s}
+.logo:hover .logo-icon{transform:rotate(10deg) scale(1.05)}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-text .brand{font-size:1.5rem;font-weight:800;color:#1B5E20;letter-spacing:1px}
+.logo-text .sub{font-size:.65rem;color:#888;letter-spacing:2px;text-transform:uppercase}
+
+/* Nav */
+.main-nav{display:flex;align-items:center;gap:28px}
+.main-nav > li{position:relative}
+.main-nav > li > a{font-size:.88rem;font-weight:500;color:#333;padding:8px 0;display:block;position:relative;transition:color .3s}
+.main-nav > li > a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#1B5E20;transition:width .3s}
+.main-nav > li:hover > a{color:#1B5E20}
+.main-nav > li:hover > a::after{width:100%}
+.nav-arrow{font-size:.6rem;margin-left:4px;transition:transform .3s}
+.main-nav > li:hover .nav-arrow{transform:rotate(180deg)}
+
+/* Mega Menu */
+.mega-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(10px);background:#fff;border-radius:12px;box-shadow:0 15px 50px rgba(0,0,0,.15);padding:28px 32px;min-width:520px;opacity:0;visibility:hidden;pointer-events:none;transition:all .3s ease;z-index:100}
+.main-nav > li:hover .mega-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.mega-menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px}
+.mega-menu a{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;font-size:.88rem;color:#444;transition:all .2s}
+.mega-menu a:hover{background:#f0f7f0;color:#1B5E20}
+.mega-menu a .cat-icon{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#e8f5e9,#c8e6c9);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.mega-menu-title{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;color:#999;font-weight:600;margin-bottom:12px;padding:0 12px}
+
+/* Header Actions */
+.header-actions{display:flex;align-items:center;gap:18px}
+.header-action{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:transparent;transition:all .2s;position:relative;color:#333;font-size:1.1rem}
+.header-action:hover{background:#f0f7f0;color:#1B5E20}
+.search-toggle{background:#f5f5f5;border-radius:24px;width:auto;padding:8px 16px;gap:8px;font-size:.85rem;color:#888}
+.search-toggle:hover{background:#e8f5e9}
+.cart-count{position:absolute;top:-2px;right:-2px;background:#C49A3B;color:#fff;font-size:.6rem;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
+.cart-amount{font-size:.8rem;font-weight:600;color:#333;margin-left:4px}
+
+/* Secondary Nav */
+.secondary-nav{border-top:1px solid #eee;display:flex;justify-content:center;gap:32px;padding:10px 0}
+.secondary-nav a{font-size:.82rem;color:#555;font-weight:500;transition:color .3s;position:relative}
+.secondary-nav a:hover{color:#1B5E20}
+.secondary-nav a.hot::after{content:'HOT';position:absolute;top:-10px;right:-22px;background:#e35d34;color:#fff;font-size:.5rem;padding:1px 4px;border-radius:3px;font-weight:700}
+
+/* ========== HERO BANNER ========== */
+.hero{position:relative;height:85vh;max-height:700px;min-height:500px;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 30%,#33691E 60%,#502e17 100%);z-index:0}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(196,154,59,.25) 0%,transparent 50%),radial-gradient(circle at 20% 80%,rgba(255,248,231,.1) 0%,transparent 40%)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 C28 15, 22 18, 15 20 C22 22, 28 25, 30 35 C32 25, 38 22, 45 20 C38 18, 32 15, 30 5z' fill='rgba(255,255,255,0.03)'/%3E%3C/svg%3E");opacity:.6}
+.hero-content{position:relative;z-index:2;max-width:650px;padding-left:6%;animation:heroFadeIn 1s ease-out}
+@keyframes heroFadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-label{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);padding:8px 20px;border-radius:30px;font-size:.78rem;color:#fff;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px;border:1px solid rgba(255,255,255,.2)}
+.hero-label .dot{width:6px;height:6px;background:#C49A3B;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.hero h1{font-family:'Playfair Display',serif;font-size:3.8rem;color:#fff;font-weight:700;line-height:1.15;margin-bottom:16px}
+.hero h1 em{font-style:italic;color:#C49A3B}
+.hero p{font-size:1.15rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:36px;max-width:500px;font-weight:300}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:#C49A3B;color:#fff;padding:15px 36px;border-radius:50px;font-size:.92rem;font-weight:600;letter-spacing:.5px;transition:all .3s;box-shadow:0 4px 20px rgba(196,154,59,.4)}
+.btn-primary:hover{background:#d4aa4b;transform:translateY(-2px);box-shadow:0 8px 30px rgba(196,154,59,.5)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:15px 36px;border-radius:50px;font-size:.92rem;font-weight:600;letter-spacing:.5px;border:2px solid rgba(255,255,255,.4);transition:all .3s}
+.btn-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.hero-stats{position:absolute;right:6%;bottom:60px;z-index:2;display:flex;gap:36px}
+.hero-stat{text-align:center;color:#fff}
+.hero-stat .num{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;color:#C49A3B}
+.hero-stat .label{font-size:.75rem;opacity:.8;letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+/* Decorative coconut shape */
+.hero-deco{position:absolute;right:8%;top:50%;transform:translateY(-50%);width:350px;height:350px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(196,154,59,.3),rgba(27,94,32,.2));border:2px solid rgba(255,255,255,.1);z-index:1;animation:float 6s ease-in-out infinite}
+.hero-deco::before{content:'';position:absolute;width:80%;height:80%;top:10%;left:10%;border-radius:50%;border:1px solid rgba(255,255,255,.08)}
+.hero-deco::after{content:'';position:absolute;width:60%;height:60%;top:20%;left:20%;border-radius:50%;background:radial-gradient(circle,rgba(196,154,59,.15),transparent);border:1px solid rgba(255,255,255,.05)}
+@keyframes float{0%,100%{transform:translateY(-50%) rotate(0deg)}50%{transform:translateY(-53%) rotate(3deg)}}
+
+/* ========== TRUST BAR ========== */
+.trust-bar{background:#FFF8E7;border-top:1px solid #f0e6cc;border-bottom:1px solid #f0e6cc;padding:18px 0}
+.trust-bar .container{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:.85rem;font-weight:500;color:#502e17}
+.trust-icon{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+
+/* ========== SHOP BY BRAND ========== */
+.brands-section{padding:70px 0;background:#fff}
+.brands-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;max-width:960px;margin:0 auto}
+.brand-card{text-align:center;padding:28px 16px;border-radius:16px;background:#fff;border:2px solid #f0f0f0;transition:all .3s;cursor:pointer;position:relative;overflow:hidden}
+.brand-card:hover{border-color:#1B5E20;transform:translateY(-5px);box-shadow:0 12px 30px rgba(27,94,32,.1)}
+.brand-circle{width:80px;height:80px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;transition:transform .3s}
+.brand-card:hover .brand-circle{transform:scale(1.1)}
+.brand-card h3{font-size:.88rem;font-weight:600;color:#333;margin-bottom:4px}
+.brand-card p{font-size:.72rem;color:#888;margin-bottom:10px}
+.brand-link{font-size:.78rem;color:#1B5E20;font-weight:600;display:inline-flex;align-items:center;gap:4px;transition:gap .3s}
+.brand-card:hover .brand-link{gap:8px}
+.brand-coconad .brand-circle{background:linear-gradient(135deg,#e8f5e9,#a5d6a7)}
+.brand-vco .brand-circle{background:linear-gradient(135deg,#FFF8E1,#FFE082)}
+.brand-tilnad .brand-circle{background:linear-gradient(135deg,#efebe9,#bcaaa4)}
+.brand-nirmal .brand-circle{background:linear-gradient(135deg,#e0f2f1,#80cbc4)}
+.brand-cocosoft .brand-circle{background:linear-gradient(135deg,#e3f2fd,#90caf9)}
+.brand-cocodaily .brand-circle{background:linear-gradient(135deg,#fff3e0,#ffcc80)}
+
+/* ========== PRODUCT GRID (reusable) ========== */
+.products-section{padding:70px 0}
+.products-section.bg-cream{background:#FAFAF5}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.product-card{background:#fff;border-radius:16px;overflow:hidden;position:relative;transition:all .4s ease;border:1px solid #f0f0f0}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.1);border-color:transparent}
+
+/* Product Image */
+.product-image{position:relative;aspect-ratio:1;overflow:hidden;background:#f8f8f8}
+.product-image .img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.9rem;font-weight:600;color:#fff;text-align:center;padding:20px;transition:transform .6s ease}
+.product-card:hover .img-placeholder{transform:scale(1.08)}
+
+/* Product badge */
+.product-badge{position:absolute;top:12px;left:12px;padding:5px 12px;border-radius:6px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;z-index:3}
+.badge-sale{background:#e35d34;color:#fff}
+.badge-best{background:#1B5E20;color:#fff}
+.badge-new{background:#C49A3B;color:#fff}
+.badge-off{background:#7B1FA2;color:#fff}
+
+/* Wishlist */
+.wishlist-btn{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;z-index:3;transition:all .3s;font-size:.9rem;backdrop-filter:blur(4px)}
+.wishlist-btn:hover{background:#fff;transform:scale(1.15);color:#e35d34}
+
+/* Quick buy overlay */
+.quick-buy-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));padding:16px;transform:translateY(100%);transition:transform .4s ease;z-index:3;display:flex;gap:8px}
+.product-card:hover .quick-buy-overlay{transform:translateY(0)}
+.quick-buy-btn{flex:1;padding:10px;border-radius:8px;font-size:.78rem;font-weight:600;text-align:center;transition:all .2s}
+.quick-buy-btn.primary{background:#1B5E20;color:#fff}
+.quick-buy-btn.primary:hover{background:#2E7D32}
+.quick-buy-btn.secondary{background:rgba(255,255,255,.2);color:#fff;backdrop-filter:blur(4px)}
+.quick-buy-btn.secondary:hover{background:rgba(255,255,255,.3)}
+
+/* Product Info */
+.product-info{padding:16px 18px 20px}
+.product-brand-label{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-weight:600;margin-bottom:4px}
+.product-name{font-size:.95rem;font-weight:600;color:#333;margin-bottom:6px;line-height:1.4;transition:color .3s}
+.product-card:hover .product-name{color:#1B5E20}
+.product-rating{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.stars{color:#C49A3B;font-size:.85rem;letter-spacing:1px}
+.rating-count{font-size:.75rem;color:#999}
+.product-price{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.current-price{font-size:1.2rem;font-weight:700;color:#1B5E20}
+.original-price{font-size:.88rem;color:#bbb;text-decoration:line-through}
+.discount-pct{font-size:.75rem;color:#e35d34;font-weight:600;background:#fef0ec;padding:2px 8px;border-radius:4px}
+/* Size selector */
+.size-options{display:flex;gap:6px;flex-wrap:wrap}
+.size-option{padding:4px 12px;border-radius:6px;font-size:.72rem;font-weight:500;border:1.5px solid #e0e0e0;color:#666;transition:all .2s;cursor:pointer}
+.size-option:hover,.size-option.active{border-color:#1B5E20;color:#1B5E20;background:#f0f7f0}
+
+/* ========== PROMO BANNER ========== */
+.promo-banner{padding:60px 0}
+.promo-inner{background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 50%,#33691E 100%);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:320px;position:relative}
+.promo-inner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='2' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E")}
+.promo-text{padding:60px 50px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.promo-label{font-size:.72rem;text-transform:uppercase;letter-spacing:3px;color:#C49A3B;font-weight:600;margin-bottom:12px}
+.promo-text h2{font-family:'Playfair Display',serif;font-size:2.2rem;color:#fff;margin-bottom:12px;line-height:1.2}
+.promo-text p{color:rgba(255,255,255,.8);margin-bottom:28px;font-size:.95rem;line-height:1.6}
+.promo-visual{background:linear-gradient(135deg,rgba(196,154,59,.2),rgba(255,248,231,.15));display:flex;align-items:center;justify-content:center;position:relative}
+.promo-visual-inner{width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.15),transparent);border:2px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:3rem}
+
+/* ========== CATEGORIES GRID ========== */
+.categories-section{padding:70px 0;background:#FAFAF5}
+.categories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.category-tile{background:#fff;border-radius:16px;padding:32px 20px;text-align:center;border:2px solid #f0f0f0;transition:all .3s;cursor:pointer;position:relative;overflow:hidden}
+.category-tile::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#e8f5e9,#fff);opacity:0;transition:opacity .3s}
+.category-tile:hover{border-color:#1B5E20;transform:translateY(-4px);box-shadow:0 12px 30px rgba(27,94,32,.08)}
+.category-tile:hover::before{opacity:1}
+.category-tile > *{position:relative;z-index:1}
+.cat-tile-icon{width:64px;height:64px;border-radius:16px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:linear-gradient(135deg,#e8f5e9,#c8e6c9);transition:transform .3s}
+.category-tile:hover .cat-tile-icon{transform:scale(1.1) rotate(-3deg)}
+.category-tile h3{font-size:.92rem;font-weight:600;color:#333;margin-bottom:4px}
+.category-tile p{font-size:.75rem;color:#999}
+
+/* ========== WHY KLF SECTION ========== */
+.why-section{padding:80px 0;background:#fff;position:relative;overflow:hidden}
+.why-section::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(27,94,32,.03),transparent);pointer-events:none}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:10px}
+.why-card{text-align:center;padding:40px 28px;border-radius:20px;background:#FAFAF5;transition:all .3s;position:relative}
+.why-card:hover{background:#f0f7f0;transform:translateY(-4px)}
+.why-icon{width:72px;height:72px;border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff;box-shadow:0 8px 20px rgba(27,94,32,.2)}
+.why-card h3{font-size:1.1rem;font-weight:700;color:#333;margin-bottom:8px}
+.why-card p{font-size:.88rem;color:#666;line-height:1.7}
+.heritage-badge{text-align:center;margin-top:40px}
+.heritage-badge .badge{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#FFF8E7,#f5ecd3);padding:16px 36px;border-radius:50px;border:2px solid #C49A3B}
+.heritage-badge .badge span{font-family:'Playfair Display',serif;font-size:1.1rem;color:#502e17;font-weight:600}
+
+/* ========== REVIEWS ========== */
+.reviews-section{padding:70px 0;background:#1B5E20;position:relative;overflow:hidden}
+.reviews-section::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='1.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E")}
+.reviews-section .section-title{color:#fff}
+.reviews-section .section-subtitle{color:rgba(255,255,255,.6)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1}
+.review-card{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:32px;transition:all .3s}
+.review-card:hover{background:rgba(255,255,255,.15);transform:translateY(-4px)}
+.review-quote{font-size:2rem;color:#C49A3B;margin-bottom:8px;font-family:'Playfair Display',serif}
+.review-text{color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;margin-bottom:20px;font-style:italic}
+.review-stars{color:#C49A3B;margin-bottom:12px;letter-spacing:2px}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#C49A3B,#d4aa4b);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.9rem}
+.review-name{font-weight:600;color:#fff;font-size:.88rem}
+.review-location{font-size:.75rem;color:rgba(255,255,255,.5)}
+
+/* ========== SUBSCRIPTION CTA ========== */
+.subscribe-cta{padding:70px 0;background:#FFF8E7}
+.subscribe-inner{text-align:center;max-width:600px;margin:0 auto}
+.subscribe-inner h2{font-family:'Playfair Display',serif;font-size:2rem;color:#502e17;margin-bottom:8px}
+.subscribe-inner p{color:#888;margin-bottom:28px;font-size:.95rem}
+.subscribe-features{display:flex;justify-content:center;gap:32px;margin-bottom:32px;flex-wrap:wrap}
+.sub-feature{display:flex;align-items:center;gap:8px;font-size:.88rem;color:#502e17;font-weight:500}
+.sub-feature .check{color:#1B5E20;font-weight:700}
+.subscribe-btn{background:#502e17;color:#fff;padding:15px 40px;border-radius:50px;font-size:.95rem;font-weight:600;transition:all .3s}
+.subscribe-btn:hover{background:#6d3f20;transform:translateY(-2px)}
+
+/* ========== INSTAGRAM FEED ========== */
+.instagram-section{padding:70px 0;background:#fff}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px}
+.insta-item{aspect-ratio:1;border-radius:12px;overflow:hidden;cursor:pointer;position:relative;transition:transform .3s}
+.insta-item:hover{transform:scale(1.03)}
+.insta-item::after{content:'';position:absolute;inset:0;background:rgba(27,94,32,.4);opacity:0;transition:opacity .3s;display:flex;align-items:center;justify-content:center}
+.insta-item:hover::after{opacity:1}
+.insta-handle{text-align:center;margin-top:20px;font-size:.92rem;color:#1B5E20;font-weight:600}
+
+/* ========== NEWSLETTER ========== */
+.newsletter-section{padding:70px 0;background:linear-gradient(135deg,#1B5E20,#33691E);position:relative;overflow:hidden}
+.newsletter-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(196,154,59,.15),transparent)}
+.newsletter-inner{text-align:center;max-width:560px;margin:0 auto;position:relative;z-index:1}
+.newsletter-inner h2{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;margin-bottom:6px}
+.newsletter-inner p{color:rgba(255,255,255,.7);margin-bottom:28px;font-size:.92rem}
+.newsletter-form{display:flex;gap:0;background:rgba(255,255,255,.15);border-radius:50px;padding:5px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2)}
+.newsletter-form input{flex:1;background:transparent;border:none;padding:14px 24px;color:#fff;font-size:.9rem}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.5)}
+.newsletter-form button{background:#C49A3B;color:#fff;padding:14px 32px;border-radius:50px;font-weight:600;font-size:.88rem;transition:all .3s;white-space:nowrap}
+.newsletter-form button:hover{background:#d4aa4b}
+
+/* ========== FOOTER ========== */
+.footer{background:#111;color:#999;padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid #222}
+.footer-brand .logo-text .brand{color:#fff}
+.footer-brand .logo-text .sub{color:#666}
+.footer-desc{font-size:.85rem;line-height:1.7;margin:16px 0 20px;color:#777}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:36px;height:36px;border-radius:50%;background:#222;display:flex;align-items:center;justify-content:center;transition:all .3s;font-size:.85rem;color:#888}
+.footer-social a:hover{background:#1B5E20;color:#fff}
+.footer-col h4{font-size:.85rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col a{font-size:.85rem;color:#777;transition:all .3s;display:inline-flex;align-items:center;gap:6px}
+.footer-col a:hover{color:#C49A3B;padding-left:4px}
+.footer-bottom{padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:.78rem;color:#555}
+.payment-icons{display:flex;gap:8px}
+.payment-icon{background:#222;padding:6px 12px;border-radius:4px;font-size:.7rem;color:#888;font-weight:600}
+
+/* ========== BACK TO TOP ========== */
+.back-to-top{position:fixed;bottom:30px;right:30px;width:48px;height:48px;border-radius:50%;background:#1B5E20;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:pointer;opacity:0;transform:translateY(20px);transition:all .3s;z-index:999;box-shadow:0 4px 15px rgba(27,94,32,.3)}
+.back-to-top.visible{opacity:1;transform:translateY(0)}
+.back-to-top:hover{background:#2E7D32;transform:translateY(-3px)}
+
+/* ========== CART DRAWER ========== */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:2000;opacity:0;visibility:hidden;transition:all .3s}
+.cart-overlay.open{opacity:1;visibility:visible}
+.cart-drawer{position:fixed;top:0;right:0;width:420px;max-width:90vw;height:100vh;background:#fff;z-index:2001;transform:translateX(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid #eee}
+.cart-header h3{font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:8px}
+.cart-header .count-badge{background:#1B5E20;color:#fff;font-size:.7rem;padding:2px 8px;border-radius:10px}
+.cart-close{width:36px;height:36px;border-radius:50%;background:#f5f5f5;display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:1rem}
+.cart-close:hover{background:#eee}
+.cart-body{flex:1;overflow-y:auto;padding:24px}
+.cart-empty{text-align:center;padding:60px 20px;color:#999}
+.cart-empty .empty-icon{font-size:3rem;margin-bottom:16px;opacity:.3}
+.cart-empty p{font-size:.92rem;margin-bottom:20px}
+.cart-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f0f0f0}
+.cart-item-img{width:80px;height:80px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff;text-align:center;padding:8px}
+.cart-item-details{flex:1}
+.cart-item-name{font-size:.88rem;font-weight:600;margin-bottom:4px}
+.cart-item-variant{font-size:.75rem;color:#999;margin-bottom:8px}
+.cart-item-qty{display:flex;align-items:center;gap:0;border:1px solid #e0e0e0;border-radius:8px;display:inline-flex}
+.qty-btn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#666;transition:all .2s;background:none}
+.qty-btn:hover{background:#f5f5f5;color:#1B5E20}
+.qty-val{width:30px;text-align:center;font-size:.85rem;font-weight:600}
+.cart-item-price{font-weight:700;color:#1B5E20;font-size:.95rem;text-align:right}
+.cart-item-remove{font-size:.75rem;color:#999;cursor:pointer;text-align:right;margin-top:4px;transition:color .2s}
+.cart-item-remove:hover{color:#e35d34}
+.cart-footer{padding:20px 24px;border-top:1px solid #eee;background:#FAFAF5}
+.free-ship-bar{margin-bottom:16px}
+.free-ship-text{font-size:.78rem;color:#666;margin-bottom:6px;display:flex;justify-content:space-between}
+.free-ship-track{height:4px;background:#e0e0e0;border-radius:4px;overflow:hidden}
+.free-ship-fill{height:100%;background:linear-gradient(90deg,#1B5E20,#C49A3B);border-radius:4px;width:65%;transition:width .5s}
+.cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:1rem;font-weight:700}
+.checkout-btn{width:100%;padding:15px;border-radius:12px;background:#1B5E20;color:#fff;font-size:.95rem;font-weight:600;transition:all .3s;text-align:center}
+.checkout-btn:hover{background:#2E7D32}
+.cart-continue{display:block;text-align:center;margin-top:10px;font-size:.82rem;color:#1B5E20;font-weight:500;cursor:pointer}
+
+/* ========== SEARCH OVERLAY ========== */
+.search-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:2000;opacity:0;visibility:hidden;transition:all .3s;display:flex;align-items:flex-start;justify-content:center;padding-top:120px;backdrop-filter:blur(4px)}
+.search-overlay.open{opacity:1;visibility:visible}
+.search-box{background:#fff;border-radius:16px;width:640px;max-width:90vw;padding:0;overflow:hidden;transform:translateY(-20px);transition:transform .3s}
+.search-overlay.open .search-box{transform:translateY(0)}
+.search-input-wrap{display:flex;align-items:center;padding:0 24px;border-bottom:1px solid #eee}
+.search-input-wrap .search-icon{font-size:1.1rem;color:#999;margin-right:12px}
+.search-input-wrap input{flex:1;padding:20px 0;border:none;font-size:1.1rem;background:none}
+.search-input-wrap .search-close-btn{width:32px;height:32px;border-radius:50%;background:#f5f5f5;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.9rem;transition:all .2s}
+.search-input-wrap .search-close-btn:hover{background:#eee}
+.search-suggestions{padding:20px 24px}
+.search-suggestions h4{font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-weight:600;margin-bottom:12px}
+.search-suggestions .tags{display:flex;flex-wrap:wrap;gap:8px}
+.search-suggestions .tag{padding:8px 16px;border-radius:20px;background:#f5f5f5;font-size:.82rem;color:#555;cursor:pointer;transition:all .2s}
+.search-suggestions .tag:hover{background:#e8f5e9;color:#1B5E20}
+
+/* ========== SCROLL REVEAL ========== */
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ========== MOBILE RESPONSIVE ========== */
+.mobile-menu-btn{display:none;width:40px;height:40px;border-radius:8px;align-items:center;justify-content:center;background:none;border:none;flex-direction:column;gap:5px;cursor:pointer}
+.mobile-menu-btn span{display:block;width:22px;height:2px;background:#333;border-radius:2px;transition:all .3s}
+.mobile-nav-overlay{display:none}
+
+@media(max-width:1024px){
+.products-grid{grid-template-columns:repeat(2,1fr)}
+.categories-grid{grid-template-columns:repeat(2,1fr)}
+.brands-grid{grid-template-columns:repeat(3,1fr)}
+.hero h1{font-size:2.8rem}
+.hero-deco{width:250px;height:250px;right:4%}
+.hero-stats{display:none}
+.reviews-grid{grid-template-columns:1fr}
+.promo-inner{grid-template-columns:1fr}
+.promo-visual{min-height:200px}
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:768px){
+.main-nav,.secondary-nav{display:none}
+.mobile-menu-btn{display:flex}
+.hero{min-height:auto;height:auto;padding:60px 0}
+.hero-content{padding-left:0;max-width:100%}
+.hero h1{font-size:2.2rem}
+.hero p{font-size:.95rem}
+.hero-deco{display:none}
+.hero-ctas{flex-direction:column}
+.hero-ctas a,.hero-ctas button{width:100%;justify-content:center}
+.products-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.brands-grid{grid-template-columns:repeat(3,1fr);gap:12px}
+.categories-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.why-grid{grid-template-columns:1fr;gap:20px}
+.insta-grid{grid-template-columns:repeat(3,1fr)}
+.trust-bar .container{gap:20px}
+.trust-item{font-size:.75rem}
+.trust-icon{width:32px;height:32px;font-size:.9rem}
+.section-title{font-size:1.6rem}
+.footer-grid{grid-template-columns:1fr}
+.footer-bottom{flex-direction:column;text-align:center}
+.mega-menu{min-width:calc(100vw - 48px)}
+.subscribe-features{flex-direction:column;align-items:center;gap:12px}
+.newsletter-form{flex-direction:column;border-radius:16px;padding:8px}
+.newsletter-form input{text-align:center}
+.newsletter-form button{border-radius:12px}
+.container{padding:0 16px}
+.product-info{padding:12px 14px 16px}
+.product-name{font-size:.85rem}
+.current-price{font-size:1rem}
+.brand-card{padding:20px 12px}
+.brand-circle{width:60px;height:60px;font-size:1.4rem}
+
+/* Mobile menu overlay */
+.mobile-nav-overlay{display:block;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1500;opacity:0;visibility:hidden;transition:all .3s}
+.mobile-nav-overlay.open{opacity:1;visibility:visible}
+.mobile-nav{position:fixed;top:0;left:0;width:300px;max-width:85vw;height:100vh;background:#fff;z-index:1501;transform:translateX(-100%);transition:transform .4s cubic-bezier(.16,1,.3,1);overflow-y:auto;padding:24px}
+.mobile-nav.open{transform:translateX(0)}
+.mobile-nav-close{width:36px;height:36px;border-radius:50%;background:#f5f5f5;display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:1rem;cursor:pointer}
+.mobile-nav ul li{border-bottom:1px solid #f0f0f0}
+.mobile-nav ul li a{display:block;padding:14px 0;font-size:.95rem;font-weight:500;color:#333}
+}
+
+@media(max-width:480px){
+.products-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.brands-grid{grid-template-columns:repeat(2,1fr)}
+.categories-grid{grid-template-columns:repeat(2,1fr)}
+.hero h1{font-size:1.8rem}
+.btn-primary,.btn-secondary{padding:13px 28px;font-size:.85rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== GROWISTO BAR ========== -->
+<div class="growisto-bar">
+  <span>Growisto</span> &nbsp;|&nbsp; Homepage Concept: Impulse Theme &nbsp;|&nbsp; Prepared for KLF Nirmal &nbsp;|&nbsp; February 2026
+</div>
+
+<!-- ========== ANNOUNCEMENT BAR ========== -->
+<div class="announcement-bar">
+  <div class="announce-track">
+    <span>FREE SHIPPING on orders above <strong>&#8377;499</strong> &nbsp;&bull;&nbsp; Use code <strong>NIRMAL15</strong> for 15% off your first order &nbsp;&bull;&nbsp; Trusted by 10M+ Indian Families &nbsp;&bull;&nbsp;</span>
+    <span>FREE SHIPPING on orders above <strong>&#8377;499</strong> &nbsp;&bull;&nbsp; Use code <strong>NIRMAL15</strong> for 15% off your first order &nbsp;&bull;&nbsp; Trusted by 10M+ Indian Families &nbsp;&bull;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ========== HEADER ========== -->
+<header class="header" id="header">
+<div class="container">
+  <div class="header-top">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2 C16 2 14 8 10 12 C6 16 2 17 2 17 C2 17 8 18 12 22 C14 24 15 28 16 30 C17 28 18 24 20 22 C24 18 30 17 30 17 C30 17 26 16 22 12 C18 8 16 2 16 2z" fill="white" opacity="0.9"/>
+          <line x1="16" y1="12" x2="16" y2="30" stroke="white" stroke-width="1.5" opacity="0.6"/>
+          <path d="M16 14 C14 16 11 17 11 17" stroke="white" stroke-width="1" opacity="0.4" fill="none"/>
+          <path d="M16 16 C18 18 21 19 21 19" stroke="white" stroke-width="1" opacity="0.4" fill="none"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">KLF Nirmal</span>
+        <span class="sub">Pure Since 1946</span>
+      </div>
+    </a>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="#">Shop by Category <span class="nav-arrow">&#9662;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-title">Categories</div>
+            <div class="mega-menu-grid">
+              <a href="#"><span class="cat-icon">&#129381;</span>Coconut Oil</a>
+              <a href="#"><span class="cat-icon">&#128167;</span>Virgin Coconut Oil</a>
+              <a href="#"><span class="cat-icon">&#129372;</span>Sesame Oil</a>
+              <a href="#"><span class="cat-icon">&#129371;</span>Coconut Milk</a>
+              <a href="#"><span class="cat-icon">&#129526;</span>Coconut Cream</a>
+              <a href="#"><span class="cat-icon">&#129480;</span>Ready-to-Eat</a>
+              <a href="#"><span class="cat-icon">&#129532;</span>Soaps &amp; Care</a>
+              <a href="#"><span class="cat-icon">&#127873;</span>Gift Sets</a>
+              <a href="#"><span class="cat-icon">&#127807;</span>Organic Range</a>
+              <a href="#"><span class="cat-icon">&#128230;</span>Bulk Packs</a>
+              <a href="#"><span class="cat-icon">&#129386;</span>Health Supplements</a>
+              <a href="#"><span class="cat-icon">&#10024;</span>New Arrivals</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Shop by Brand <span class="nav-arrow">&#9662;</span></a>
+          <div class="mega-menu" style="min-width:400px">
+            <div class="mega-menu-title">Our Brands</div>
+            <div class="mega-menu-grid">
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#e8f5e9,#a5d6a7)">&#127811;</span>Coconad</a>
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#FFF8E1,#FFE082)">&#128167;</span>Nirmal VCO</a>
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#efebe9,#bcaaa4)">&#129372;</span>Tilnad / Ellunad</a>
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#e0f2f1,#80cbc4)">&#129381;</span>Nirmal</a>
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#e3f2fd,#90caf9)">&#129532;</span>Cocosoft</a>
+              <a href="#"><span class="cat-icon" style="background:linear-gradient(135deg,#fff3e0,#ffcc80)">&#127774;</span>Cocodaily</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Combos &amp; Gifts</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="header-action search-toggle" onclick="toggleSearch()" aria-label="Search">
+        <span>&#128269;</span>
+        <span>Search</span>
+      </button>
+      <button class="header-action" aria-label="Account">
+        <span>&#128100;</span>
+      </button>
+      <button class="header-action" onclick="toggleCart()" aria-label="Cart">
+        <span>&#128722;</span>
+        <span class="cart-count">2</span>
+      </button>
+      <span class="cart-amount">&#8377;448</span>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Secondary Nav -->
+  <div class="secondary-nav">
+    <a href="#">Coconut Oil</a>
+    <a href="#" class="hot">Virgin Coconut Oil</a>
+    <a href="#">Sesame Oil</a>
+    <a href="#">Coconut Milk</a>
+    <a href="#">Soaps</a>
+    <a href="#">Combos</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">View All</a>
+  </div>
+</div>
+</header>
+
+<!-- ========== HERO BANNER ========== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-deco"></div>
+  <div class="container" style="position:relative;z-index:2;width:100%">
+    <div class="hero-content">
+      <div class="hero-label"><span class="dot"></span> 80 Years of Purity</div>
+      <h1>Pure Since <em>1946</em></h1>
+      <p>From Kerala's coconut heartland to your kitchen. Cold-pressed oils, fresh coconut milk, and natural care products — crafted with an 80-year legacy of trust.</p>
+      <div class="hero-ctas">
+        <a href="#bestsellers" class="btn-primary">SHOP BEST SELLERS &#8594;</a>
+        <a href="#brands" class="btn-secondary">EXPLORE OUR BRANDS</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="num">80+</div>
+      <div class="label">Years Legacy</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">10M+</div>
+      <div class="label">Families Trust Us</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">100+</div>
+      <div class="label">Products</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRUST BAR ========== -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-item"><div class="trust-icon">&#128737;&#65039;</div> FSSAI Certified</div>
+    <div class="trust-item"><div class="trust-icon">&#127807;</div> 100% Natural</div>
+    <div class="trust-item"><div class="trust-icon">&#127981;</div> 80-Year Legacy</div>
+    <div class="trust-item"><div class="trust-icon">&#128666;</div> Free Shipping &#8377;499+</div>
+    <div class="trust-item"><div class="trust-icon">&#9989;</div> Secure Checkout</div>
+  </div>
+</div>
+
+<!-- ========== SHOP BY BRAND ========== -->
+<section class="brands-section reveal" id="brands">
+  <div class="container">
+    <h2 class="section-title">Shop by Brand</h2>
+    <p class="section-subtitle">Six specialized brands, one family of trust</p>
+    <div class="brands-grid">
+      <div class="brand-card brand-coconad">
+        <div class="brand-circle">&#127811;</div>
+        <h3>Coconad</h3>
+        <p>Coconut Milk &amp; Cream</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+      <div class="brand-card brand-vco">
+        <div class="brand-circle">&#128167;</div>
+        <h3>Nirmal VCO</h3>
+        <p>Virgin Coconut Oil</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+      <div class="brand-card brand-tilnad">
+        <div class="brand-circle">&#129372;</div>
+        <h3>Tilnad</h3>
+        <p>Cold-Pressed Sesame Oil</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+      <div class="brand-card brand-nirmal">
+        <div class="brand-circle">&#129381;</div>
+        <h3>Nirmal</h3>
+        <p>Pure Coconut Oil</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+      <div class="brand-card brand-cocosoft">
+        <div class="brand-circle">&#129532;</div>
+        <h3>Cocosoft</h3>
+        <p>Soaps &amp; Personal Care</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+      <div class="brand-card brand-cocodaily">
+        <div class="brand-circle">&#127774;</div>
+        <h3>Cocodaily</h3>
+        <p>Multi-Source Edible Oil</p>
+        <span class="brand-link">Shop Now &#8594;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BEST SELLERS ========== -->
+<section class="products-section bg-cream reveal" id="bestsellers">
+  <div class="container">
+    <h2 class="section-title">Best Sellers</h2>
+    <p class="section-subtitle">Loved by millions of Indian families</p>
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#2E7D32,#1B5E20)">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="16" ry="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><path d="M32 14 C30 20 26 22 26 22" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/><path d="M32 14 C34 20 38 22 38 22" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/></svg>
+            <span style="font-size:.75rem;margin-top:8px;opacity:.7">Nirmal Coconut Oil</span>
+          </div>
+          <span class="product-badge badge-sale">SALE</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Nirmal</div>
+          <div class="product-name">Nirmal Pure Coconut Oil 1L</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">(1,247)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;299</span>
+            <span class="original-price">&#8377;399</span>
+            <span class="discount-pct">25% OFF</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option">500ml</span>
+            <span class="size-option active">1L</span>
+            <span class="size-option">5L</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#43A047,#66BB6A)">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none"><rect x="20" y="16" width="24" height="34" rx="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><rect x="24" y="10" width="16" height="8" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+            <span style="font-size:.75rem;margin-top:8px;opacity:.7">Coconad Coconut Milk</span>
+          </div>
+          <span class="product-badge badge-best">BESTSELLER</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Coconad</div>
+          <div class="product-name">Coconad Coconut Milk 400ml</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="rating-count">(856)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;149</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option">200ml</span>
+            <span class="size-option active">400ml</span>
+            <span class="size-option">1L</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#C49A3B,#d4aa4b)">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="34" rx="14" ry="20" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><circle cx="32" cy="10" r="5" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+            <span style="font-size:.75rem;margin-top:8px;opacity:.7">Nirmal VCO 500ml</span>
+          </div>
+          <span class="product-badge badge-off">25% OFF</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Nirmal VCO</div>
+          <div class="product-name">Nirmal Virgin Coconut Oil 500ml</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">(623)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;449</span>
+            <span class="original-price">&#8377;599</span>
+            <span class="discount-pct">25% OFF</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option active">500ml</span>
+            <span class="size-option">1L</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#6D4C41,#8D6E63)">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="16" ry="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><line x1="24" y1="28" x2="40" y2="28" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+            <span style="font-size:.75rem;margin-top:8px;opacity:.7">Tilnad Sesame Oil</span>
+          </div>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Tilnad</div>
+          <div class="product-name">Tilnad Cold-Pressed Sesame Oil 1L</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="rating-count">(412)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;349</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option">500ml</span>
+            <span class="size-option active">1L</span>
+            <span class="size-option">5L</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROMO BANNER ========== -->
+<section class="promo-banner reveal">
+  <div class="container">
+    <div class="promo-inner">
+      <div class="promo-text">
+        <div class="promo-label">New Arrival</div>
+        <h2>Coconad Coconut Cream Range</h2>
+        <p>Rich, creamy, and 100% natural. Perfect for curries, desserts, and smoothies. Made from freshly pressed Kerala coconuts.</p>
+        <a href="#" class="btn-primary" style="align-self:flex-start">EXPLORE NOW &#8594;</a>
+      </div>
+      <div class="promo-visual">
+        <div class="promo-visual-inner">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="30" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><ellipse cx="40" cy="42" rx="18" ry="24" fill="rgba(255,255,255,0.08)"/><path d="M40 18 C38 26 32 30 32 30" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/><path d="M40 18 C42 26 48 30 48 30" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SHOP BY CATEGORY ========== -->
+<section class="categories-section reveal">
+  <div class="container">
+    <h2 class="section-title">Shop by Category</h2>
+    <p class="section-subtitle">Find exactly what you need</p>
+    <div class="categories-grid">
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#129381;</div>
+        <h3>Coconut Oil</h3>
+        <p>12 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#128167;</div>
+        <h3>Virgin Coconut Oil</h3>
+        <p>8 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#129372;</div>
+        <h3>Sesame Oil</h3>
+        <p>6 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#129371;</div>
+        <h3>Coconut Milk</h3>
+        <p>10 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#129532;</div>
+        <h3>Soaps &amp; Personal Care</h3>
+        <p>15 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#129480;</div>
+        <h3>Ready-to-Eat</h3>
+        <p>8 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#127873;</div>
+        <h3>Combos &amp; Gift Sets</h3>
+        <p>6 Products</p>
+      </div>
+      <div class="category-tile">
+        <div class="cat-tile-icon">&#128230;</div>
+        <h3>Bulk Packs</h3>
+        <p>9 Products</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY KLF NIRMAL ========== -->
+<section class="why-section reveal">
+  <div class="container">
+    <h2 class="section-title">Why KLF Nirmal?</h2>
+    <p class="section-subtitle">80 years of purity, tradition, and trust</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">&#129495;</div>
+        <h3>Cold-Pressed Tradition</h3>
+        <p>Our oils are extracted using traditional cold-pressing methods that preserve natural nutrients, aroma, and flavour — just like your grandmother's kitchen.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">&#127793;</div>
+        <h3>Farm to Table Freshness</h3>
+        <p>Sourced directly from Kerala's finest coconut and sesame farms. No middlemen, no compromises — from harvest to your home in the freshest way possible.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">&#128149;</div>
+        <h3>Trusted by 10M+ Families</h3>
+        <p>Three generations of Indian families have made KLF Nirmal a kitchen staple. Our commitment to purity is why they keep coming back.</p>
+      </div>
+    </div>
+    <div class="heritage-badge">
+      <div class="badge">
+        <span style="font-size:1.6rem">&#127942;</span>
+        <span>Established 1946 &bull; Kerala, India &bull; FSSAI Certified</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CUSTOMER REVIEWS ========== -->
+<section class="reviews-section reveal">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-subtitle">Real reviews from real families</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-quote">&#8220;</div>
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">Best coconut oil I've ever used. The aroma is incredible and you can tell it's genuinely cold-pressed. My entire family has switched to Nirmal.</p>
+        <div class="review-author">
+          <div class="review-avatar">PM</div>
+          <div>
+            <div class="review-name">Priya Menon</div>
+            <div class="review-location">Bangalore, Karnataka</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">&#8220;</div>
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">We've been using Nirmal for 3 generations in our family. My grandmother started it, my mother continued, and now I use it for my kids. Nothing compares.</p>
+        <div class="review-author">
+          <div class="review-avatar">RK</div>
+          <div>
+            <div class="review-name">Rajesh Krishnan</div>
+            <div class="review-location">Chennai, Tamil Nadu</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">&#8220;</div>
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <p class="review-text">Coconad coconut milk makes the creamiest curries! I've tried every brand available and nothing comes close to the richness and natural taste of Coconad.</p>
+        <div class="review-author">
+          <div class="review-avatar">AS</div>
+          <div>
+            <div class="review-name">Anitha Suresh</div>
+            <div class="review-location">Kochi, Kerala</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEW ARRIVALS ========== -->
+<section class="products-section reveal" id="newarrivals">
+  <div class="container">
+    <h2 class="section-title">New Arrivals</h2>
+    <p class="section-subtitle">Fresh additions to our family of products</p>
+    <div class="products-grid">
+
+      <!-- New Product 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#FF8F00,#FFA726)">
+            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="16" ry="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/></svg>
+            <span style="font-size:.72rem;margin-top:6px;opacity:.7">Cocodaily Oil</span>
+          </div>
+          <span class="product-badge badge-new">NEW</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Cocodaily</div>
+          <div class="product-name">Cocodaily Multi-Source Oil 1L</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="rating-count">(78)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;279</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option">500ml</span>
+            <span class="size-option active">1L</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Product 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#558B2F,#7CB342)">
+            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"><rect x="20" y="18" width="24" height="32" rx="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/></svg>
+            <span style="font-size:.72rem;margin-top:6px;opacity:.7">Coconut Cream</span>
+          </div>
+          <span class="product-badge badge-new">NEW</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Coconad</div>
+          <div class="product-name">Coconad Coconut Cream 200ml</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">(134)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;99</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option active">200ml</span>
+            <span class="size-option">400ml</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Product 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#C49A3B,#E0B85C)">
+            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="36" rx="14" ry="20" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/></svg>
+            <span style="font-size:.72rem;margin-top:6px;opacity:.7">VCO 250ml</span>
+          </div>
+          <span class="product-badge badge-new">NEW</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Nirmal VCO</div>
+          <div class="product-name">Nirmal VCO Cold-Pressed 250ml</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">(91)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;299</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option active">250ml</span>
+            <span class="size-option">500ml</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Product 4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#4FC3F7,#81D4FA)">
+            <svg width="50" height="50" viewBox="0 0 64 64" fill="none"><rect x="18" y="22" width="28" height="24" rx="12" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/></svg>
+            <span style="font-size:.72rem;margin-top:6px;opacity:.7">Cocosoft Soap x3</span>
+          </div>
+          <span class="product-badge badge-new">NEW</span>
+          <button class="wishlist-btn">&#9825;</button>
+          <div class="quick-buy-overlay">
+            <button class="quick-buy-btn primary">Quick Buy</button>
+            <button class="quick-buy-btn secondary">View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand-label">Cocosoft</div>
+          <div class="product-name">Cocosoft Coconut Soap (Pack of 3)</div>
+          <div class="product-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="rating-count">(56)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">&#8377;149</span>
+          </div>
+          <div class="size-options">
+            <span class="size-option active">Pack of 3</span>
+            <span class="size-option">Pack of 6</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== SUBSCRIBE & SAVE ========== -->
+<section class="subscribe-cta reveal">
+  <div class="container">
+    <div class="subscribe-inner">
+      <h2>Never Run Out &mdash; Subscribe &amp; Save 20%</h2>
+      <p>Set up auto-delivery for your kitchen essentials and never worry about running out again.</p>
+      <div class="subscribe-features">
+        <span class="sub-feature"><span class="check">&#10003;</span> Save 20% every order</span>
+        <span class="sub-feature"><span class="check">&#10003;</span> Free delivery always</span>
+        <span class="sub-feature"><span class="check">&#10003;</span> Cancel anytime</span>
+        <span class="sub-feature"><span class="check">&#10003;</span> Flexible schedule</span>
+      </div>
+      <button class="subscribe-btn">START YOUR SUBSCRIPTION &#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INSTAGRAM FEED ========== -->
+<section class="instagram-section reveal">
+  <div class="container">
+    <h2 class="section-title">#KLFNirmalFamily</h2>
+    <p class="section-subtitle">Join our community of healthy cooking enthusiasts</p>
+    <div class="insta-grid">
+      <div class="insta-item" style="background:linear-gradient(135deg,#1B5E20,#4CAF50)"></div>
+      <div class="insta-item" style="background:linear-gradient(135deg,#C49A3B,#FFD54F)"></div>
+      <div class="insta-item" style="background:linear-gradient(135deg,#502e17,#8D6E63)"></div>
+      <div class="insta-item" style="background:linear-gradient(135deg,#2E7D32,#66BB6A)"></div>
+      <div class="insta-item" style="background:linear-gradient(135deg,#FFF8E7,#FFE082)"></div>
+      <div class="insta-item" style="background:linear-gradient(135deg,#33691E,#558B2F)"></div>
+    </div>
+    <div class="insta-handle">@klfnirmal &bull; Follow us on Instagram</div>
+  </div>
+</section>
+
+<!-- ========== NEWSLETTER ========== -->
+<section class="newsletter-section reveal">
+  <div class="container">
+    <div class="newsletter-inner">
+      <h2>Join 50,000+ Families Who Cook with Love</h2>
+      <p>Get recipes, health tips, exclusive offers, and new product launches straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <a href="#" class="logo" style="margin-bottom:4px">
+          <div class="logo-icon" style="width:36px;height:36px">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 2 C16 2 14 8 10 12 C6 16 2 17 2 17 C2 17 8 18 12 22 C14 24 15 28 16 30 C17 28 18 24 20 22 C24 18 30 17 30 17 C30 17 26 16 22 12 C18 8 16 2 16 2z" fill="white" opacity="0.9"/></svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand" style="font-size:1.2rem">KLF Nirmal</span>
+            <span class="sub">Pure Since 1946</span>
+          </div>
+        </a>
+        <p class="footer-desc">India's most trusted coconut oil brand with an 80-year legacy of purity. From Kerala's coconut heartland to millions of Indian kitchens.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="YouTube">Yt</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Shop All</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Combos &amp; Gift Sets</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Blog &amp; Recipes</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Customer Service -->
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns &amp; Refunds</a></li>
+          <li><a href="#">FAQs / Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Wholesale Enquiry</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Our Brands -->
+      <div class="footer-col">
+        <h4>Our Brands</h4>
+        <ul>
+          <li><a href="#">&#127811; Coconad</a></li>
+          <li><a href="#">&#128167; Nirmal VCO</a></li>
+          <li><a href="#">&#129372; Tilnad / Ellunad</a></li>
+          <li><a href="#">&#129381; Nirmal</a></li>
+          <li><a href="#">&#129532; Cocosoft</a></li>
+          <li><a href="#">&#127774; Cocodaily</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Contact</h4>
+        <ul>
+          <li><a href="#">support@klfnirmal.com</a></li>
+          <li><a href="#">+91 484-XXX-XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 KLF Nirmal Industries Pvt Ltd &bull; FSSAI Lic: XXXXXXXXXX &bull; All Rights Reserved</span>
+      <div class="payment-icons">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">UPI</span>
+        <span class="payment-icon">RuPay</span>
+        <span class="payment-icon">COD</span>
+        <span class="payment-icon">Razorpay</span>
+      </div>
+      <span>Powered by Shopify</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== BACK TO TOP ========== -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+
+<!-- ========== SEARCH OVERLAY ========== -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)toggleSearch()">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" placeholder="Search for coconut oil, sesame oil, coconut milk...">
+      <div class="search-close-btn" onclick="toggleSearch()">&#10005;</div>
+    </div>
+    <div class="search-suggestions">
+      <h4>Popular Searches</h4>
+      <div class="tags">
+        <span class="tag">Coconut Oil</span>
+        <span class="tag">Virgin Coconut Oil</span>
+        <span class="tag">Sesame Oil</span>
+        <span class="tag">Coconut Milk</span>
+        <span class="tag">Gift Set</span>
+        <span class="tag">Combo Pack</span>
+        <span class="tag">Organic</span>
+        <span class="tag">Soap</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CART DRAWER ========== -->
+<div class="cart-overlay" id="cartOverlay" onclick="if(event.target===this)toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>Your Cart <span class="count-badge">2 items</span></h3>
+    <button class="cart-close" onclick="toggleCart()">&#10005;</button>
+  </div>
+  <div class="cart-body">
+    <!-- Cart Item 1 -->
+    <div class="cart-item">
+      <div class="cart-item-img" style="background:linear-gradient(135deg,#2E7D32,#1B5E20)">
+        <span style="color:#fff;font-size:.65rem">Coconut Oil 1L</span>
+      </div>
+      <div class="cart-item-details">
+        <div class="cart-item-name">Nirmal Pure Coconut Oil</div>
+        <div class="cart-item-variant">1L &bull; Nirmal</div>
+        <div class="cart-item-qty">
+          <button class="qty-btn">&minus;</button>
+          <span class="qty-val">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="cart-item-price">&#8377;299</div>
+        <div class="cart-item-remove">Remove</div>
+      </div>
+    </div>
+    <!-- Cart Item 2 -->
+    <div class="cart-item">
+      <div class="cart-item-img" style="background:linear-gradient(135deg,#43A047,#66BB6A)">
+        <span style="color:#fff;font-size:.65rem">Coconut Milk 400ml</span>
+      </div>
+      <div class="cart-item-details">
+        <div class="cart-item-name">Coconad Coconut Milk</div>
+        <div class="cart-item-variant">400ml &bull; Coconad</div>
+        <div class="cart-item-qty">
+          <button class="qty-btn">&minus;</button>
+          <span class="qty-val">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="cart-item-price">&#8377;149</div>
+        <div class="cart-item-remove">Remove</div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="free-ship-bar">
+      <div class="free-ship-text">
+        <span>Add &#8377;51 more for <strong>FREE shipping</strong></span>
+        <span>&#8377;448 / &#8377;499</span>
+      </div>
+      <div class="free-ship-track"><div class="free-ship-fill" style="width:90%"></div></div>
+    </div>
+    <div class="cart-total">
+      <span>Subtotal</span>
+      <span>&#8377;448</span>
+    </div>
+    <button class="checkout-btn">PROCEED TO CHECKOUT &#8594;</button>
+    <span class="cart-continue" onclick="toggleCart()">Continue Shopping</span>
+  </div>
+</div>
+
+<!-- ========== MOBILE NAV ========== -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="if(event.target===this)toggleMobileNav()"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-close" onclick="toggleMobileNav()">&#10005;</div>
+  <a href="#" class="logo" style="margin-bottom:24px">
+    <div class="logo-icon" style="width:36px;height:36px">
+      <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><path d="M16 2 C16 2 14 8 10 12 C6 16 2 17 2 17 C2 17 8 18 12 22 C14 24 15 28 16 30 C17 28 18 24 20 22 C24 18 30 17 30 17 C30 17 26 16 22 12 C18 8 16 2 16 2z" fill="white" opacity="0.9"/></svg>
+    </div>
+    <div class="logo-text">
+      <span class="brand" style="font-size:1.1rem">KLF Nirmal</span>
+      <span class="sub">Pure Since 1946</span>
+    </div>
+  </a>
+  <ul>
+    <li><a href="#">Shop All Categories</a></li>
+    <li><a href="#">Coconut Oil</a></li>
+    <li><a href="#">Virgin Coconut Oil</a></li>
+    <li><a href="#">Sesame Oil</a></li>
+    <li><a href="#">Coconut Milk &amp; Cream</a></li>
+    <li><a href="#">Soaps &amp; Personal Care</a></li>
+    <li><a href="#">Best Sellers</a></li>
+    <li><a href="#">Combos &amp; Gifts</a></li>
+    <li><a href="#">New Arrivals</a></li>
+    <li><a href="#">Blog &amp; Recipes</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Track Order</a></li>
+    <li><a href="#">Help &amp; FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+// Sticky header shrink
+const header = document.getElementById('header');
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+  lastScroll = window.scrollY;
+});
+
+// Back to top
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+revealEls.forEach(el => revealObserver.observe(el));
+
+// Cart drawer
+function toggleCart() {
+  document.getElementById('cartOverlay').classList.toggle('open');
+  document.getElementById('cartDrawer').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('cartDrawer').classList.contains('open') ? 'hidden' : '';
+}
+
+// Search overlay
+function toggleSearch() {
+  const overlay = document.getElementById('searchOverlay');
+  overlay.classList.toggle('open');
+  document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+  if (overlay.classList.contains('open')) {
+    setTimeout(() => overlay.querySelector('input').focus(), 300);
+  }
+}
+
+// Mobile nav
+function toggleMobileNav() {
+  document.getElementById('mobileNavOverlay').classList.toggle('open');
+  document.getElementById('mobileNav').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('mobileNav').classList.contains('open') ? 'hidden' : '';
+}
+
+// Size option select
+document.querySelectorAll('.size-option').forEach(opt => {
+  opt.addEventListener('click', function() {
+    this.parentElement.querySelectorAll('.size-option').forEach(s => s.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// Wishlist toggle
+document.querySelectorAll('.wishlist-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (this.innerHTML === '\u2665') {
+      this.innerHTML = '\u2661';
+      this.style.color = '';
+    } else {
+      this.innerHTML = '\u2665';
+      this.style.color = '#e35d34';
+    }
+  });
+});
+
+// Close on ESC
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.getElementById('searchOverlay').classList.remove('open');
+    document.getElementById('cartOverlay').classList.remove('open');
+    document.getElementById('cartDrawer').classList.remove('open');
+    document.getElementById('mobileNavOverlay').classList.remove('open');
+    document.getElementById('mobileNav').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+// Quantity buttons
+document.querySelectorAll('.qty-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const valEl = this.parentElement.querySelector('.qty-val');
+    let val = parseInt(valEl.textContent);
+    if (this.textContent.trim() === '+') {
+      val++;
+    } else if (val > 1) {
+      val--;
+    }
+    valEl.textContent = val;
+  });
+});
+</script>
+</body>
+</html>

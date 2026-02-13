@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KLF Nirmal — Store Revamp Proposal | Growisto</title>
+  <link rel="icon" href="assets/growisto-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       PASSWORD OVERLAY
+       ============================================================ -->
+  <div class="password-overlay" id="passwordOverlay">
+    <div class="password-card">
+      <img src="assets/growisto-logo.png" alt="Growisto" class="password-logo">
+      <h2 class="password-subtitle">Client Presentation</h2>
+      <p class="password-client">KLF Nirmal — Store Revamp Proposal</p>
+      <form id="passwordForm">
+        <div class="password-input-group">
+          <input type="password" id="passwordInput" class="password-input" placeholder="Enter access code" autocomplete="off">
+        </div>
+        <button type="submit" class="password-submit">Access Presentation</button>
+        <p class="password-error" id="errorMsg">Incorrect access code. Please try again.</p>
+      </form>
+      <p class="text-muted text-small mt-24">Prepared by Growisto | February 2026</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MOBILE HEADER
+       ============================================================ -->
+  <div class="mobile-header" id="mobileHeader">
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+      <span></span><span></span><span></span>
+    </div>
+    <img src="assets/growisto-logo-white.png" alt="Growisto" class="mobile-logo">
+    <span class="mobile-title">KLF Nirmal</span>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- ============================================================
+       SIDEBAR NAVIGATION
+       ============================================================ -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/growisto-logo-white.png" alt="Growisto" class="sidebar-logo">
+      <div class="sidebar-client">KLF NIRMAL</div>
+      <div class="sidebar-project">Store Revamp Proposal</div>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-item active" onclick="switchTab('overview')" data-tab="overview">
+        <span class="nav-icon">&#128203;</span>
+        <span class="nav-label">Overview</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('cro-audit')" data-tab="cro-audit">
+        <span class="nav-icon">&#128202;</span>
+        <span class="nav-label">CRO Audit</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('features')" data-tab="features">
+        <span class="nav-icon">&#9889;</span>
+        <span class="nav-label">Features</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('themes')" data-tab="themes">
+        <span class="nav-icon">&#127912;</span>
+        <span class="nav-label">Theme Evaluation</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('impulse')" data-tab="impulse">
+        <span class="nav-icon">&#128421;</span>
+        <span class="nav-label">Impulse Preview</span>
+        <span class="nav-badge">&#11088;</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('local')" data-tab="local">
+        <span class="nav-icon">&#128421;</span>
+        <span class="nav-label">Local Preview</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('prestige')" data-tab="prestige">
+        <span class="nav-icon">&#128421;</span>
+        <span class="nav-label">Prestige Preview</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('investment')" data-tab="investment">
+        <span class="nav-icon">&#128176;</span>
+        <span class="nav-label">Investment & Next Steps</span>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      Prepared by Growisto<br>February 2026
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <div class="main-content">
+
+    <!-- ============================================================
+         TAB 1: OVERVIEW
+         ============================================================ -->
+    <div class="tab-content active" id="tab-overview">
+      <div class="tab-body">
+
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+          <h1>KLF Nirmal — Store Revamp Proposal</h1>
+          <p class="hero-subtitle">Transforming an 80-year heritage brand for the digital age</p>
+          <p class="hero-date">Prepared by Growisto | February 2026</p>
+        </div>
+
+        <!-- What We'll Cover -->
+        <h2 class="mb-20">What We'll Cover</h2>
+        <div class="section-cards fade-in-stagger mb-32">
+          <div class="section-card">
+            <div class="card-icon">&#128202;</div>
+            <div class="card-title">CRO Audit</div>
+            <div class="card-desc">Deep-dive analysis of your current store performance, traffic patterns, and conversion funnel bottlenecks</div>
+          </div>
+          <div class="section-card orange">
+            <div class="card-icon">&#9889;</div>
+            <div class="card-title">Feature Plan</div>
+            <div class="card-desc">44 carefully selected features tied to specific conversion problems, classified by implementation type</div>
+          </div>
+          <div class="section-card purple">
+            <div class="card-icon">&#127912;</div>
+            <div class="card-title">Theme Evaluation</div>
+            <div class="card-desc">7 Shopify themes evaluated, 3 shortlisted with detailed comparison based on your requirements</div>
+          </div>
+          <div class="section-card green">
+            <div class="card-icon">&#128421;</div>
+            <div class="card-title">Live Mockups</div>
+            <div class="card-desc">Interactive homepage prototypes showing YOUR products on each shortlisted theme</div>
+          </div>
+          <div class="section-card amber">
+            <div class="card-icon">&#128176;</div>
+            <div class="card-title">Investment</div>
+            <div class="card-desc">Transparent cost breakdown, ROI projection, and clear next steps</div>
+          </div>
+        </div>
+
+        <!-- Key Metrics Snapshot -->
+        <h2 class="mb-20">Key Metrics Snapshot</h2>
+        <div class="metrics-grid fade-in-stagger mb-32">
+          <div class="metric-card success">
+            <div class="metric-value">26,200</div>
+            <div class="metric-label">Monthly Visits</div>
+            <div class="metric-benchmark">Growing traffic base</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">65.88%</div>
+            <div class="metric-label">Bounce Rate</div>
+            <div class="metric-benchmark">Benchmark: &lt;45%</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">4.8s</div>
+            <div class="metric-label">LCP (Mobile)</div>
+            <div class="metric-benchmark">Target: &le;2.5s</div>
+          </div>
+          <div class="metric-card warning">
+            <div class="metric-value">1.57</div>
+            <div class="metric-label">Pages per Visit</div>
+            <div class="metric-benchmark">Benchmark: &gt;3</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary);">78%</div>
+            <div class="metric-label">Mobile Traffic</div>
+            <div class="metric-benchmark">Mobile-first critical</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">20</div>
+            <div class="metric-label">Feature Gaps</div>
+            <div class="metric-benchmark">12 HIGH severity</div>
+          </div>
+        </div>
+
+        <!-- Your Requirements -->
+        <h2 class="mb-20">Your Requirements</h2>
+        <div class="metrics-grid fade-in-stagger mb-32">
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary);">100</div>
+            <div class="metric-label">SKUs across 22 Categories</div>
+            <div class="metric-benchmark">6 sub-brands to manage</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary); font-size: 18px; line-height: 1.4;">Coconad, VCO, Tilnad, Nirmal, Cocosoft, Cocodaily</div>
+            <div class="metric-label">6 Sub-brands</div>
+            <div class="metric-benchmark">Ranked by sales volume</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary); font-size: 16px; line-height: 1.4;">Authentic, Trusted, Quality</div>
+            <div class="metric-label">Brand Personality</div>
+            <div class="metric-benchmark">80-year heritage brand</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary); font-size: 14px; line-height: 1.4;">Two Brothers Organic, Anveshan Farm, Organic Tattva</div>
+            <div class="metric-label">Reference Sites</div>
+            <div class="metric-benchmark">Clean, trustworthy, food-focused</div>
+          </div>
+          <div class="metric-card warning">
+            <div class="metric-value" style="font-size: 16px;">Vela Framework v2.0.0</div>
+            <div class="metric-label">Current Theme</div>
+            <div class="metric-benchmark">Outdated — needs replacement</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary);">78%</div>
+            <div class="metric-label">Mobile Traffic</div>
+            <div class="metric-benchmark">Mobile-first design is critical</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 2: CRO AUDIT
+         ============================================================ -->
+    <div class="tab-content" id="tab-cro-audit">
+      <div class="tab-header">
+        <h1>CRO Audit & Performance Analysis</h1>
+        <p>Data-driven analysis of klfnirmal.com's current performance</p>
+      </div>
+      <div class="tab-body">
+
+        <!-- Performance Metrics -->
+        <h2 class="mb-20">Performance Metrics</h2>
+        <div class="metrics-grid fade-in-stagger mb-32">
+          <div class="metric-card danger">
+            <div class="metric-value">65.88%</div>
+            <div class="metric-label">Bounce Rate</div>
+            <div class="metric-benchmark">Benchmark: &lt;45% &mdash; 2 of 3 visitors leave immediately</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">1.57</div>
+            <div class="metric-label">Pages per Visit</div>
+            <div class="metric-benchmark">Benchmark: &gt;3 &mdash; barely browse 2 pages</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">0:25</div>
+            <div class="metric-label">Avg Session</div>
+            <div class="metric-benchmark">Benchmark: &gt;2:00 &mdash; gone in 25 seconds</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">4.8s</div>
+            <div class="metric-label">LCP Mobile</div>
+            <div class="metric-benchmark">Target: &le;2.5s &mdash; Core Web Vitals FAILED</div>
+          </div>
+          <div class="metric-card warning">
+            <div class="metric-value">3.0s</div>
+            <div class="metric-label">FCP</div>
+            <div class="metric-benchmark">Target: &le;1.8s &mdash; First paint too slow</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="color: var(--color-primary);">78%</div>
+            <div class="metric-label">Mobile Traffic</div>
+            <div class="metric-benchmark">Mobile-first critical</div>
+          </div>
+          <div class="metric-card success">
+            <div class="metric-value">26,200</div>
+            <div class="metric-label">Monthly Visits</div>
+            <div class="metric-benchmark">Growing traffic base</div>
+          </div>
+          <div class="metric-card danger">
+            <div class="metric-value">~0.01%</div>
+            <div class="metric-label">Email & Paid</div>
+            <div class="metric-benchmark">Virtually non-existent channels</div>
+          </div>
+        </div>
+
+        <!-- Conversion Funnel -->
+        <h2 class="mb-20">Conversion Funnel</h2>
+        <div class="funnel-container mb-32">
+          <div class="funnel-bar">
+            <div class="funnel-label">Monthly Visits</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-1" style="width: 100%;">26,200</div>
+            </div>
+            <div class="funnel-value">100%</div>
+            <div class="funnel-drop"></div>
+          </div>
+          <div class="funnel-bar">
+            <div class="funnel-label">Engaged (not bounced)</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-2" style="width: 34.12%;">~8,935</div>
+            </div>
+            <div class="funnel-value">34.12%</div>
+            <div class="funnel-drop">-65.88%</div>
+          </div>
+          <div class="funnel-bar">
+            <div class="funnel-label">PDP Views</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-3" style="width: 15.6%;">~4,100</div>
+            </div>
+            <div class="funnel-value">15.6%</div>
+            <div class="funnel-drop">-18.5%</div>
+          </div>
+          <div class="funnel-bar">
+            <div class="funnel-label">Added to Cart</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-4" style="width: 3.1%;">~820</div>
+            </div>
+            <div class="funnel-value">3.1%</div>
+            <div class="funnel-drop">-12.5%</div>
+          </div>
+          <div class="funnel-bar">
+            <div class="funnel-label">Reached Checkout</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-5" style="width: 1.6%;">~410</div>
+            </div>
+            <div class="funnel-value">1.6%</div>
+            <div class="funnel-drop">-1.5%</div>
+          </div>
+          <div class="funnel-bar">
+            <div class="funnel-label">Purchased</div>
+            <div class="funnel-track">
+              <div class="funnel-fill stage-6" style="width: 0.7%;">est. ~180</div>
+            </div>
+            <div class="funnel-value">~0.7%</div>
+            <div class="funnel-drop">-0.9%</div>
+          </div>
+        </div>
+
+        <!-- FigJam CRO Funnel Embed -->
+        <h2 class="mb-20">CRO Conversion Funnel (FigJam)</h2>
+        <div class="figjam-embed mb-32">
+          <div class="embed-header">
+            <span>CRO Conversion Funnel</span>
+            <a href="https://www.figma.com/board/qoix2doXekorWJeyXhNVMV/KLF-Nirmal-%E2%80%94-Conversion-Funnel" target="_blank" rel="noopener">Open in Figma &rarr;</a>
+          </div>
+          <iframe src="https://embed.figma.com/board/qoix2doXekorWJeyXhNVMV/KLF-Nirmal-%E2%80%94-Conversion-Funnel?node-id=&embed-host=share" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <!-- Feature Gaps Identified -->
+        <h2 class="mb-20">Feature Gaps Identified</h2>
+        <h3 class="text-danger mb-12" style="font-size: 16px;">HIGH Severity (12 items)</h3>
+        <div class="gap-grid mb-24">
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Visual category browsing missing</div>
+            <div class="gap-desc">Text menus only &mdash; no visual category tiles or image-based navigation</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Mega menu lacks images</div>
+            <div class="gap-desc">Text-only navigation &mdash; no product or category images in dropdown</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">No testimonials on homepage</div>
+            <div class="gap-desc">Missing social proof on the most-visited page</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Product cards missing ratings/CTAs</div>
+            <div class="gap-desc">No add-to-cart button or star ratings on product listing cards</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Filter modal broken</div>
+            <div class="gap-desc">Blank modal appears on collection pages &mdash; filters non-functional</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">No ATC/scarcity on PLP</div>
+            <div class="gap-desc">Extra clicks required to purchase &mdash; no urgency elements</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">PDP layout messy</div>
+            <div class="gap-desc">Scattered information, poor visual hierarchy, confusing structure</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Reviews missing on PDP</div>
+            <div class="gap-desc">No social proof at the critical decision point</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Buy Now CTA missing</div>
+            <div class="gap-desc">ATC button not sticky on mobile &mdash; scrolls out of view</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">Cart UI inconsistent</div>
+            <div class="gap-desc">Mini cart and full cart page mismatch in design and functionality</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">No free shipping progress bar</div>
+            <div class="gap-desc">No gamification or incentive to increase cart value</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity high">HIGH</div>
+            <div class="gap-title">No Frequently Bought Together</div>
+            <div class="gap-desc">Missed cross-sell opportunity on every product page</div>
+          </div>
+        </div>
+
+        <h3 class="text-warning mb-12" style="font-size: 16px;">MEDIUM Severity (8 items)</h3>
+        <div class="gap-grid mb-32">
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">No coupon widget</div>
+            <div class="gap-desc">No visible coupon/discount application in cart</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">No stock indicators</div>
+            <div class="gap-desc">No low-stock or sold-out badges on products</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">Performance failing</div>
+            <div class="gap-desc">Core Web Vitals failing &mdash; LCP 4.8s, FCP 3.0s</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">Email channel absent</div>
+            <div class="gap-desc">~0.01% traffic from email &mdash; no email marketing</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">Paid channel absent</div>
+            <div class="gap-desc">~0.01% traffic from paid ads &mdash; untapped growth</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">No ingredient info</div>
+            <div class="gap-desc">Food brand without ingredient transparency on PDP</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">Session too short</div>
+            <div class="gap-desc">25-second average session &mdash; not enough to browse or buy</div>
+          </div>
+          <div class="gap-card">
+            <div class="gap-severity medium">MEDIUM</div>
+            <div class="gap-title">Pages per visit too low</div>
+            <div class="gap-desc">1.57 pages &mdash; visitors barely explore beyond landing page</div>
+          </div>
+        </div>
+
+        <!-- Revenue Impact -->
+        <h2 class="mb-20">Revenue Impact</h2>
+        <div class="callout success">
+          <h4>Projected Improvement</h4>
+          <p>By fixing the bounce rate from 65.88% to &lt;45%, improving page speed from 4.8s to &lt;2.5s, and filling the 12 HIGH feature gaps &mdash; we project a <strong>2-2.5x improvement</strong> in your current conversion rate, bringing it in line with Food &amp; Beverages benchmarks (2.5-4% CVR).</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 3: FEATURES
+         ============================================================ -->
+    <div class="tab-content" id="tab-features">
+      <div class="tab-header">
+        <h1>Feature Recommendations</h1>
+        <p>44 features selected, every one tied to a specific CRO problem</p>
+      </div>
+      <div class="tab-body">
+
+        <!-- Feature-to-Funnel Mapping -->
+        <h2 class="mb-20">Feature-to-Funnel Mapping</h2>
+        <div class="funnel-mapping mb-32">
+          <div class="funnel-map-item">
+            <div class="problem">65.88% Bounce Rate<span class="problem-metric">Benchmark: &lt;45%</span></div>
+            <div class="arrow">&rarr;</div>
+            <div class="solution">
+              <span class="solution-tag">Hero Banner</span>
+              <span class="solution-tag">Trust Badges</span>
+              <span class="solution-tag">Brand Story</span>
+              <span class="solution-tag">Video Banner</span>
+              <span class="solution-tag">Page Speed</span>
+            </div>
+          </div>
+          <div class="funnel-map-item">
+            <div class="problem">1.57 Pages/Visit<span class="problem-metric">Benchmark: &gt;3</span></div>
+            <div class="arrow">&rarr;</div>
+            <div class="solution">
+              <span class="solution-tag">Category Nav</span>
+              <span class="solution-tag">Best Sellers</span>
+              <span class="solution-tag">Mega Menu</span>
+              <span class="solution-tag">New Arrivals</span>
+              <span class="solution-tag">Infinite Scroll</span>
+            </div>
+          </div>
+          <div class="funnel-map-item">
+            <div class="problem">LCP 4.8s Failed<span class="problem-metric">Target: &le;2.5s</span></div>
+            <div class="arrow">&rarr;</div>
+            <div class="solution">
+              <span class="solution-tag">New Theme</span>
+              <span class="solution-tag">Image Optimization</span>
+              <span class="solution-tag">Lazy Load</span>
+              <span class="solution-tag">CDN</span>
+              <span class="solution-tag">Code Minification</span>
+            </div>
+          </div>
+          <div class="funnel-map-item">
+            <div class="problem">Missing ATC & Reviews<span class="problem-metric">No social proof or quick buy</span></div>
+            <div class="arrow">&rarr;</div>
+            <div class="solution">
+              <span class="solution-tag">Quick Buy</span>
+              <span class="solution-tag">Judge.me Reviews</span>
+              <span class="solution-tag">Stock Badges</span>
+              <span class="solution-tag">Image Zoom</span>
+              <span class="solution-tag">Wishlist</span>
+            </div>
+          </div>
+          <div class="funnel-map-item">
+            <div class="problem">Cart Abandonment<span class="problem-metric">No urgency or trust elements</span></div>
+            <div class="arrow">&rarr;</div>
+            <div class="solution">
+              <span class="solution-tag">Free Ship Bar</span>
+              <span class="solution-tag">Coupons</span>
+              <span class="solution-tag">Delivery Date</span>
+              <span class="solution-tag">Upsell</span>
+              <span class="solution-tag">Trust Elements</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FigJam Feature-to-Funnel Mapping Embed -->
+        <div class="figjam-embed mb-32">
+          <div class="embed-header">
+            <span>Feature-to-Funnel Mapping</span>
+            <a href="https://www.figma.com/board/LW9kONWt4zMISPnapmUhJF/KLF-Nirmal-%E2%80%94-Feature-to-Funnel-Mapping" target="_blank" rel="noopener">Open in Figma &rarr;</a>
+          </div>
+          <iframe src="https://embed.figma.com/board/LW9kONWt4zMISPnapmUhJF/KLF-Nirmal-%E2%80%94-Feature-to-Funnel-Mapping?node-id=&embed-host=share" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <!-- Feature Classification -->
+        <h2 class="mb-20">Feature Classification</h2>
+        <div class="metrics-grid mb-32" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="metric-card success">
+            <div class="metric-value">25</div>
+            <div class="metric-label">Inbuilt Features</div>
+            <div class="metric-benchmark">Come with theme &mdash; zero extra dev cost</div>
+          </div>
+          <div class="metric-card warning">
+            <div class="metric-value">10</div>
+            <div class="metric-label">Custom Development</div>
+            <div class="metric-benchmark">Liquid/CSS/JS development needed</div>
+          </div>
+          <div class="metric-card" style="">
+            <div class="metric-value" style="color: #3b82f6;">9</div>
+            <div class="metric-label">App-Based</div>
+            <div class="metric-benchmark">Third-party Shopify apps required</div>
+          </div>
+        </div>
+
+        <!-- Features by Page Section (Accordion) -->
+        <h2 class="mb-20">Features by Page Section</h2>
+        <div class="accordion mb-32">
+
+          <!-- Section 1: Homepage Features -->
+          <div class="accordion-item open">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Homepage Features</span>
+                <span class="accordion-count">(9 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>CRO Problem</th>
+                        <th>Impulse</th>
+                        <th>Local</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Hero banner slider</td>
+                        <td>65.88% bounce</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Video banner (brand showcase)</td>
+                        <td>0:25 session</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Popular categories navigation</td>
+                        <td>1.57 pages/visit</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Best selling products</td>
+                        <td>1.57 pages/visit</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>New arrivals section</td>
+                        <td>1.57 pages/visit</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Customer reviews carousel</td>
+                        <td>No testimonials</td>
+                        <td><span class="badge app">App (Judge.me)</span></td>
+                        <td><span class="badge app">App (Judge.me)</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Trust badges / USP bar</td>
+                        <td>65.88% bounce</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Instagram feed</td>
+                        <td>0:25 session</td>
+                        <td><span class="badge app">App (Instafeed)</span></td>
+                        <td><span class="badge app">App (Instafeed)</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Brand story section</td>
+                        <td>0:25 session</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Collection Page Features -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Collection Page Features</span>
+                <span class="accordion-count">(9 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>CRO Problem</th>
+                        <th>Impulse</th>
+                        <th>Local</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Advanced filters</td>
+                        <td>Broken filter modal</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Sort options</td>
+                        <td>Standard browsing</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Quick add to cart</td>
+                        <td>No ATC on PLP</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Grid and List view toggle</td>
+                        <td>100 SKUs browsable</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Infinite scroll</td>
+                        <td>1.57 pages/visit</td>
+                        <td><span class="badge app">App</span></td>
+                        <td><span class="badge app">App</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Product comparison</td>
+                        <td>Users leave to compare</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Color/variant swatches</td>
+                        <td>Pack size selection</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Quick view popup</td>
+                        <td>Reduce clicks</td>
+                        <td><span class="badge custom">Custom ~8hrs</span></td>
+                        <td><span class="badge custom">Custom ~8hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Product badges</td>
+                        <td>No visual cues</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Product Page Features -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Product Page Features (PDP)</span>
+                <span class="accordion-count">(16 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>CRO Problem</th>
+                        <th>Impulse</th>
+                        <th>Local</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Image zoom</td>
+                        <td>Messy PDP</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Product video (YouTube)</td>
+                        <td>Minimal details</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Delivery date estimation</td>
+                        <td>Purchase anxiety</td>
+                        <td><span class="badge app">App ~$7/mo</span></td>
+                        <td><span class="badge app">App ~$7/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Reviews and ratings</td>
+                        <td>Reviews missing</td>
+                        <td><span class="badge inbuilt">Inbuilt (Judge.me)</span></td>
+                        <td><span class="badge inbuilt">Inbuilt (Judge.me)</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Trust badges on PDP</td>
+                        <td>Trust gap</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Stock availability</td>
+                        <td>User uncertainty</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Frequently bought together</td>
+                        <td>Missed cross-sell</td>
+                        <td><span class="badge app">App ~$10/mo</span></td>
+                        <td><span class="badge app">App ~$10/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Product FAQs</td>
+                        <td>Minimal details</td>
+                        <td><span class="badge app">App ~$5/mo</span></td>
+                        <td><span class="badge app">App ~$5/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Social media share</td>
+                        <td>Organic growth</td>
+                        <td><span class="badge custom">Custom ~3hrs</span></td>
+                        <td><span class="badge custom">Custom ~3hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Wishlist</td>
+                        <td>Retention</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Recently viewed</td>
+                        <td>1.57 pages/visit</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Ingredient / Nutrition info</td>
+                        <td>Food-specific need</td>
+                        <td><span class="badge custom">Custom ~8hrs</span></td>
+                        <td><span class="badge inbuilt">INBUILT &#9733;</span></td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>FSSAI / Organic badges</td>
+                        <td>Food safety trust</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Customer photos / UGC</td>
+                        <td>Social proof</td>
+                        <td><span class="badge app">App ~$15/mo</span></td>
+                        <td><span class="badge app">App ~$15/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>Back-in-stock notification</td>
+                        <td>Revenue recovery</td>
+                        <td><span class="badge app">App ~$5/mo</span></td>
+                        <td><span class="badge app">App ~$5/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>Pack size comparison</td>
+                        <td>Food-specific</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Cart & Checkout Features -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Cart & Checkout Features</span>
+                <span class="accordion-count">(10 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>CRO Problem</th>
+                        <th>Impulse</th>
+                        <th>Local</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Shipping cost estimator</td>
+                        <td>Shipping surprise</td>
+                        <td><span class="badge app">App ~$8/mo</span></td>
+                        <td><span class="badge app">App ~$8/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Coupon/voucher widget</td>
+                        <td>No coupon field</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Related products (upsell)</td>
+                        <td>Missed AOV</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Trust elements on cart</td>
+                        <td>Cart abandonment</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Multiple payment options</td>
+                        <td>Standard</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Order notes</td>
+                        <td>Customer convenience</td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                        <td><span class="badge inbuilt">Inbuilt</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Free shipping threshold bar</td>
+                        <td>No gamification</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>One-click checkout</td>
+                        <td>Checkout friction</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Expected delivery date</td>
+                        <td>Reduce abandonment</td>
+                        <td><span class="badge app">App ~$7/mo</span></td>
+                        <td><span class="badge app">App ~$7/mo</span></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Delivery slot selection</td>
+                        <td>Perishable products</td>
+                        <td><span class="badge app">App ~$10/mo</span></td>
+                        <td><span class="badge app">App ~$10/mo</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Post-Purchase & Retention -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Post-Purchase & Retention</span>
+                <span class="accordion-count">(6 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>CRO Problem</th>
+                        <th>Implementation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Order tracking page</td>
+                        <td>Standard</td>
+                        <td><span class="badge app">App (AfterShip ~$9/mo)</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Customer accounts</td>
+                        <td>No retention</td>
+                        <td><span class="badge inbuilt">Inbuilt (Shopify)</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Loyalty/rewards program</td>
+                        <td>Repeat purchase</td>
+                        <td><span class="badge app">App (Smile.io ~$49/mo)</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Back-in-stock notifications</td>
+                        <td>Revenue recovery</td>
+                        <td><span class="badge app">App (same as PDP)</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Abandoned cart recovery</td>
+                        <td>Cart abandonment</td>
+                        <td><span class="badge app">App (Klaviyo/Mailchimp)</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Referral program</td>
+                        <td>Acquisition</td>
+                        <td><span class="badge app">App (ReferralCandy ~$49/mo)</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Food-Specific Features -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <div class="accordion-title">
+                <span>Food-Specific Features</span>
+                <span class="accordion-count">(8 features)</span>
+              </div>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Feature</th>
+                        <th>Implementation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dietary / health filter</td>
+                        <td><span class="badge custom">Custom ~8hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Subscription / auto-replenish</td>
+                        <td><span class="badge app">App (Recharge ~$99/mo)</span></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Bulk ordering / wholesale</td>
+                        <td><span class="badge app">App (Wholesale Club ~$20/mo)</span></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Freshness / expiry info</td>
+                        <td><span class="badge custom">Custom ~4hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Ingredient transparency</td>
+                        <td><span class="badge custom">Custom ~8hrs (Impulse)</span> / <span class="badge inbuilt">Inbuilt (Local)</span></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Nutrition facts / health benefits</td>
+                        <td><span class="badge custom">Custom ~6hrs (Impulse)</span> / <span class="badge inbuilt">Inbuilt (Local)</span></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Cooking tips / usage guide</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Seasonal / festival offers</td>
+                        <td><span class="badge custom">Custom ~6hrs</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Recommended App Stack -->
+        <h2 class="mb-20">Recommended App Stack</h2>
+        <div class="table-wrapper mb-32">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>App</th>
+                <th>Monthly Cost</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Judge.me</strong> (existing)</td>
+                <td>$15/mo</td>
+                <td>Reviews, UGC, carousel</td>
+              </tr>
+              <tr>
+                <td><strong>Est. Delivery Date</strong></td>
+                <td>$7/mo</td>
+                <td>Pincode-based delivery on PDP + Cart</td>
+              </tr>
+              <tr>
+                <td><strong>Frequently Bought Together</strong></td>
+                <td>$10/mo</td>
+                <td>Cross-sell bundles</td>
+              </tr>
+              <tr>
+                <td><strong>HelpCenter</strong></td>
+                <td>$5/mo</td>
+                <td>Product FAQs</td>
+              </tr>
+              <tr>
+                <td><strong>Back in Stock</strong></td>
+                <td>$5/mo</td>
+                <td>Email/SMS alerts</td>
+              </tr>
+              <tr>
+                <td><strong>Recharge Subscriptions</strong></td>
+                <td>$99/mo</td>
+                <td>Auto-replenish</td>
+              </tr>
+              <tr>
+                <td><strong>Shiprocket</strong></td>
+                <td>Usage-based</td>
+                <td>Multi-carrier shipping</td>
+              </tr>
+              <tr>
+                <td><strong>AfterShip</strong></td>
+                <td>$9/mo</td>
+                <td>Branded tracking</td>
+              </tr>
+              <tr>
+                <td><strong>Smile.io / Rivo</strong></td>
+                <td>$49/mo</td>
+                <td>Loyalty + Referral</td>
+              </tr>
+              <tr>
+                <td><strong>Wholesale Club</strong></td>
+                <td>$20/mo</td>
+                <td>Bulk B2B pricing</td>
+              </tr>
+              <tr>
+                <td><strong>Tidio / Interakt</strong></td>
+                <td>$19/mo</td>
+                <td>Chat + WhatsApp</td>
+              </tr>
+              <tr>
+                <td><strong>Instafeed</strong></td>
+                <td>$6/mo</td>
+                <td>Instagram feed</td>
+              </tr>
+              <tr>
+                <td><strong>Infinite Scroll</strong></td>
+                <td>$5/mo</td>
+                <td>Collection pagination</td>
+              </tr>
+              <tr>
+                <td><strong>Delivery Slots</strong></td>
+                <td>$10/mo</td>
+                <td>Time selection</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td colspan="2"><strong>~$259/mo (approx. &#8377;22,000-28,000/month)</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Development Estimate -->
+        <h2 class="mb-20">Development Estimate</h2>
+        <div class="table-wrapper mb-32">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Section</th>
+                <th>Custom Items</th>
+                <th>Est. Hours</th>
+                <th>Cost (@&#8377;2,500/hr)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Homepage</td>
+                <td>3</td>
+                <td>14 hrs</td>
+                <td>&#8377;35,000</td>
+              </tr>
+              <tr>
+                <td>Collection</td>
+                <td>2</td>
+                <td>12 hrs</td>
+                <td>&#8377;30,000</td>
+              </tr>
+              <tr>
+                <td>PDP</td>
+                <td>5</td>
+                <td>27 hrs</td>
+                <td>&#8377;67,500</td>
+              </tr>
+              <tr>
+                <td>Cart / Checkout</td>
+                <td>4</td>
+                <td>18 hrs</td>
+                <td>&#8377;45,000</td>
+              </tr>
+              <tr>
+                <td>Food-Specific</td>
+                <td>6</td>
+                <td>38 hrs</td>
+                <td>&#8377;95,000</td>
+              </tr>
+              <tr>
+                <td>Header / Footer</td>
+                <td>3</td>
+                <td>10 hrs</td>
+                <td>&#8377;25,000</td>
+              </tr>
+              <tr>
+                <td>Mobile Optimization</td>
+                <td>&mdash;</td>
+                <td>12 hrs</td>
+                <td>&#8377;30,000</td>
+              </tr>
+              <tr>
+                <td>Page Speed</td>
+                <td>&mdash;</td>
+                <td>16 hrs</td>
+                <td>&#8377;40,000</td>
+              </tr>
+              <tr>
+                <td>Technical SEO</td>
+                <td>&mdash;</td>
+                <td>20 hrs</td>
+                <td>&#8377;50,000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>Total (Impulse)</strong></td>
+                <td></td>
+                <td><strong>~167 hrs</strong></td>
+                <td><strong>&#8377;4,17,500</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Total (Local)</strong></td>
+                <td></td>
+                <td><strong>~153 hrs</strong></td>
+                <td><strong>&#8377;3,82,500</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="callout info">
+          <h4>Local saves ~14 development hours</h4>
+          <p>Local theme has nutritional info and ingredient display built-in, saving approximately 14 hours of custom development compared to Impulse.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 4: THEMES
+         ============================================================ -->
+    <div class="tab-content" id="tab-themes">
+      <div class="tab-header">
+        <h1>Theme Evaluation</h1>
+        <p>7 themes evaluated, 3 shortlisted for KLF Nirmal</p>
+      </div>
+      <div class="tab-body">
+
+        <!-- All Themes Compared -->
+        <h2 class="mb-20">All Themes Compared</h2>
+        <div class="table-wrapper mb-32">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Theme</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Reviews</th>
+                <th>Updated</th>
+                <th>Food-Specific</th>
+                <th>Inbuilt %</th>
+                <th>Year 1 Cost</th>
+                <th>Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="recommended">
+                <td><strong>Impulse &#11088;</strong></td>
+                <td>$380</td>
+                <td>95%</td>
+                <td>1,090</td>
+                <td>2025/26</td>
+                <td>No</td>
+                <td>57%</td>
+                <td>&#8377;2,82,120</td>
+                <td><span class="badge inbuilt">RECOMMENDED</span></td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>Local</strong></td>
+                <td>$380</td>
+                <td>98%</td>
+                <td>92</td>
+                <td>Oct 2025</td>
+                <td>Yes</td>
+                <td>57%</td>
+                <td>&#8377;2,57,120</td>
+                <td><span class="badge custom">Alternative</span></td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>Prestige</strong></td>
+                <td>$400</td>
+                <td>91%</td>
+                <td>821</td>
+                <td>Jan 2026</td>
+                <td>No</td>
+                <td>48%</td>
+                <td>&#8377;3,33,800</td>
+                <td><span class="badge optional">Premium option</span></td>
+              </tr>
+              <tr>
+                <td>Modular</td>
+                <td>$300</td>
+                <td>96%</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>No</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td><span class="badge optional">Not evaluated</span></td>
+              </tr>
+              <tr>
+                <td>Foodie</td>
+                <td>$180</td>
+                <td>100%</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>Yes</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td><span class="badge optional">Too limited</span></td>
+              </tr>
+              <tr>
+                <td>Flow</td>
+                <td>$380</td>
+                <td>91%</td>
+                <td>367</td>
+                <td>&mdash;</td>
+                <td>No</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td><span class="badge optional">Impulse better</span></td>
+              </tr>
+              <tr>
+                <td>Taste</td>
+                <td>Free</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>No</td>
+                <td>54%</td>
+                <td>&mdash;</td>
+                <td><span class="badge high">Insufficient</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Top 3 Shortlisted Themes -->
+        <h2 class="mb-20">Top 3 Shortlisted Themes</h2>
+        <div class="theme-cards-grid mb-32">
+
+          <!-- Impulse -->
+          <div class="theme-card recommended">
+            <div class="theme-name">Impulse</div>
+            <div class="theme-developer">by Archetype Themes</div>
+            <div class="theme-price">$380 (&#8377;31,920)</div>
+            <div class="theme-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="review-count">95% positive (1,090 reviews)</span>
+            </div>
+            <div class="theme-description">
+              <strong>Presets:</strong> Clean, Bold, Modern<br>
+              Highest rated, most battle-tested, modern clean aesthetic, strong merchandising, mega menu, quick buy + slide-out cart, mobile-optimized.
+            </div>
+            <div class="theme-stats">
+              <div class="stat-item">
+                <div class="stat-value">25/44</div>
+                <div class="stat-label">Features Inbuilt (57%)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">~167 hrs</div>
+                <div class="stat-label">Custom Dev Needed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;4,17,500</div>
+                <div class="stat-label">Custom Dev Cost</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;2,82,120</div>
+                <div class="stat-label">Year 1 Total</div>
+              </div>
+            </div>
+            <div class="theme-tags">
+              <span class="theme-tag">Mega Menu</span>
+              <span class="theme-tag">Quick Buy</span>
+              <span class="theme-tag">Slide-out Cart</span>
+              <span class="theme-tag">Mobile-first</span>
+              <span class="theme-tag">1,090 Reviews</span>
+            </div>
+            <div class="callout warning mt-12" style="padding: 12px 16px;">
+              <p style="font-size: 12px; margin: 0;"><strong>Con:</strong> Not food-specific, mid-range speed scores. Nutritional info requires custom development.</p>
+            </div>
+          </div>
+
+          <!-- Local -->
+          <div class="theme-card">
+            <div class="theme-name">Local</div>
+            <div class="theme-developer">by Krown Themes SRL</div>
+            <div class="theme-price">$380 (&#8377;31,920)</div>
+            <div class="theme-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="review-count">98% positive (92 reviews)</span>
+            </div>
+            <div class="theme-description">
+              <strong>Presets:</strong> Local, Soleway, Thrive, Caffeine, Lively<br>
+              Purpose-built for Food & Drink, nutritional info built-in, highest satisfaction, recipe integration, before/after sliders.
+            </div>
+            <div class="theme-stats">
+              <div class="stat-item">
+                <div class="stat-value">25/44</div>
+                <div class="stat-label">Features Inbuilt (57%)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">~153 hrs</div>
+                <div class="stat-label">Custom Dev Needed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;3,82,500</div>
+                <div class="stat-label">Custom Dev Cost</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;2,57,120</div>
+                <div class="stat-label">Year 1 Total (Lowest)</div>
+              </div>
+            </div>
+            <div class="theme-tags">
+              <span class="theme-tag">Food & Drink</span>
+              <span class="theme-tag">Nutrition Info</span>
+              <span class="theme-tag">Recipe Integration</span>
+              <span class="theme-tag">Before/After</span>
+              <span class="theme-tag">98% Positive</span>
+            </div>
+            <div class="callout warning mt-12" style="padding: 12px 16px;">
+              <p style="font-size: 12px; margin: 0;"><strong>Con:</strong> Smaller community (92 vs 1,090 reviews). Newer theme with less battle-testing.</p>
+            </div>
+          </div>
+
+          <!-- Prestige -->
+          <div class="theme-card">
+            <div class="theme-name">Prestige</div>
+            <div class="theme-developer">by Maestrooo</div>
+            <div class="theme-price">$400 (&#8377;33,600)</div>
+            <div class="theme-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="review-count">91% positive (821 reviews)</span>
+            </div>
+            <div class="theme-description">
+              <strong>Presets:</strong> Prestige, Couture, Vogue<br>
+              Premium heritage positioning, editorial storytelling, 30+ configurable sections, recently updated Jan 2026.
+            </div>
+            <div class="theme-stats">
+              <div class="stat-item">
+                <div class="stat-value">21/44</div>
+                <div class="stat-label">Features Inbuilt (48%)</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">~227 hrs</div>
+                <div class="stat-label">Custom Dev Needed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;5,67,700</div>
+                <div class="stat-label">Custom Dev Cost</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">&#8377;3,33,800</div>
+                <div class="stat-label">Year 1 Total</div>
+              </div>
+            </div>
+            <div class="theme-tags">
+              <span class="theme-tag">Premium Aesthetic</span>
+              <span class="theme-tag">Editorial Layout</span>
+              <span class="theme-tag">30+ Sections</span>
+              <span class="theme-tag">Heritage Brands</span>
+              <span class="theme-tag">Updated Jan 2026</span>
+            </div>
+            <div class="callout warning mt-12" style="padding: 12px 16px;">
+              <p style="font-size: 12px; margin: 0;"><strong>Con:</strong> Most expensive option. Fewest features inbuilt (48%). More customization needed than alternatives.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Not Recommended -->
+        <h2 class="mb-20">Not Recommended</h2>
+        <div class="metrics-grid mb-32" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="metric-card">
+            <div class="metric-value" style="font-size: 18px; color: #64748b;">Empire</div>
+            <div class="metric-label">79% rating</div>
+            <div class="metric-benchmark">Big-catalog focus overkill for 100 SKUs</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size: 18px; color: #64748b;">Focal</div>
+            <div class="metric-label">Tech-imagery focus</div>
+            <div class="metric-benchmark">Doesn't fit food & beverage aesthetic</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size: 18px; color: #64748b;">Flow</div>
+            <div class="metric-label">91% rating</div>
+            <div class="metric-benchmark">Good but Impulse better at same price</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size: 18px; color: #64748b;">Taste</div>
+            <div class="metric-label">Free theme</div>
+            <div class="metric-benchmark">Insufficient features (54% inbuilt)</div>
+          </div>
+        </div>
+
+        <!-- Our Recommendation -->
+        <h2 class="mb-20">Our Recommendation</h2>
+        <div class="callout info mb-16">
+          <h4>Primary: Impulse</h4>
+          <p>Best balance of features (57% inbuilt), community support (1,090 reviews), and modern design. Year 1 cost: &#8377;2,82,120. The most battle-tested option with proven reliability.</p>
+        </div>
+        <div class="callout success">
+          <h4>Alternative: Local</h4>
+          <p>If food-specific features are the priority. Only theme built for food & drink with nutritional info inbuilt. Lowest Year 1 cost: &#8377;2,57,120. Saves ~14 development hours on food-critical features.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 5: IMPULSE PREVIEW
+         ============================================================ -->
+    <div class="tab-content" id="tab-impulse">
+      <div class="tab-header">
+        <h1>Impulse Theme Preview</h1>
+        <p>Interactive homepage prototype with KLF Nirmal products</p>
+      </div>
+      <div class="tab-body">
+
+        <div class="info-banner recommended">
+          <div class="banner-icon">&#11088;</div>
+          <div class="banner-text">
+            <h3>Our Primary Recommendation</h3>
+            <p>Impulse by Archetype Themes &mdash; Modern, clean aesthetic with the highest feature coverage</p>
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <div class="stat-pill">
+            <div class="stat-number">57%</div>
+            <div class="stat-desc">Features Inbuilt</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">1,090</div>
+            <div class="stat-desc">Reviews (95% positive)</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">&#8377;2,82,120</div>
+            <div class="stat-desc">Year 1 Total</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">167 hrs</div>
+            <div class="stat-desc">Custom Dev</div>
+          </div>
+        </div>
+
+        <div class="viewport-toggle">
+          <button class="viewport-btn active" data-mode="desktop" onclick="setViewport('impulse', 'desktop')">
+            <span class="viewport-icon">&#128421;</span> Desktop
+          </button>
+          <button class="viewport-btn" data-mode="mobile" onclick="setViewport('impulse', 'mobile')">
+            <span class="viewport-icon">&#128241;</span> Mobile
+          </button>
+        </div>
+
+        <div class="mockup-container desktop" id="mockup-impulse">
+          <div class="browser-chrome">
+            <div class="browser-toolbar">
+              <div class="browser-dots">
+                <div class="browser-dot red"></div>
+                <div class="browser-dot yellow"></div>
+                <div class="browser-dot green"></div>
+              </div>
+              <div class="browser-url">klfnirmal.com &mdash; Impulse Theme</div>
+            </div>
+            <div class="browser-body" style="position: relative;">
+              <div class="iframe-loading" id="loading-impulse">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading Impulse preview...</div>
+              </div>
+              <iframe data-src="mockups/impulse.html" style="height: 800px;" onload="document.getElementById('loading-impulse').classList.add('hidden');" title="Impulse Theme Homepage Mockup"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 6: LOCAL PREVIEW
+         ============================================================ -->
+    <div class="tab-content" id="tab-local">
+      <div class="tab-header">
+        <h1>Local Theme Preview</h1>
+        <p>Interactive homepage prototype with KLF Nirmal products</p>
+      </div>
+      <div class="tab-body">
+
+        <div class="info-banner alternative">
+          <div class="banner-icon">&#127860;</div>
+          <div class="banner-text">
+            <h3>Food-Specific Alternative</h3>
+            <p>Local by Krown Themes &mdash; Purpose-built for food & drink brands</p>
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <div class="stat-pill">
+            <div class="stat-number">Nutrition</div>
+            <div class="stat-desc">Info Inbuilt</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">98%</div>
+            <div class="stat-desc">Positive Rating</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">&#8377;2,57,120</div>
+            <div class="stat-desc">Year 1 (Lowest)</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">153 hrs</div>
+            <div class="stat-desc">Custom Dev</div>
+          </div>
+        </div>
+
+        <div class="viewport-toggle">
+          <button class="viewport-btn active" data-mode="desktop" onclick="setViewport('local', 'desktop')">
+            <span class="viewport-icon">&#128421;</span> Desktop
+          </button>
+          <button class="viewport-btn" data-mode="mobile" onclick="setViewport('local', 'mobile')">
+            <span class="viewport-icon">&#128241;</span> Mobile
+          </button>
+        </div>
+
+        <div class="mockup-container desktop" id="mockup-local">
+          <div class="browser-chrome">
+            <div class="browser-toolbar">
+              <div class="browser-dots">
+                <div class="browser-dot red"></div>
+                <div class="browser-dot yellow"></div>
+                <div class="browser-dot green"></div>
+              </div>
+              <div class="browser-url">klfnirmal.com &mdash; Local Theme</div>
+            </div>
+            <div class="browser-body" style="position: relative;">
+              <div class="iframe-loading" id="loading-local">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading Local preview...</div>
+              </div>
+              <iframe data-src="mockups/local.html" style="height: 800px;" onload="document.getElementById('loading-local').classList.add('hidden');" title="Local Theme Homepage Mockup"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 7: PRESTIGE PREVIEW
+         ============================================================ -->
+    <div class="tab-content" id="tab-prestige">
+      <div class="tab-header">
+        <h1>Prestige Theme Preview</h1>
+        <p>Interactive homepage prototype with KLF Nirmal products</p>
+      </div>
+      <div class="tab-body">
+
+        <div class="info-banner premium">
+          <div class="banner-icon">&#10024;</div>
+          <div class="banner-text">
+            <h3>Premium Heritage Option</h3>
+            <p>Prestige by Maestrooo &mdash; Luxury editorial aesthetic for heritage brands</p>
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <div class="stat-pill">
+            <div class="stat-number">Editorial</div>
+            <div class="stat-desc">Aesthetic</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">821</div>
+            <div class="stat-desc">Reviews</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">&#8377;3,33,800</div>
+            <div class="stat-desc">Year 1</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-number">30+</div>
+            <div class="stat-desc">Configurable Sections</div>
+          </div>
+        </div>
+
+        <div class="viewport-toggle">
+          <button class="viewport-btn active" data-mode="desktop" onclick="setViewport('prestige', 'desktop')">
+            <span class="viewport-icon">&#128421;</span> Desktop
+          </button>
+          <button class="viewport-btn" data-mode="mobile" onclick="setViewport('prestige', 'mobile')">
+            <span class="viewport-icon">&#128241;</span> Mobile
+          </button>
+        </div>
+
+        <div class="mockup-container desktop" id="mockup-prestige">
+          <div class="browser-chrome">
+            <div class="browser-toolbar">
+              <div class="browser-dots">
+                <div class="browser-dot red"></div>
+                <div class="browser-dot yellow"></div>
+                <div class="browser-dot green"></div>
+              </div>
+              <div class="browser-url">klfnirmal.com &mdash; Prestige Theme</div>
+            </div>
+            <div class="browser-body" style="position: relative;">
+              <div class="iframe-loading" id="loading-prestige">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading Prestige preview...</div>
+              </div>
+              <iframe data-src="mockups/prestige.html" style="height: 800px;" onload="document.getElementById('loading-prestige').classList.add('hidden');" title="Prestige Theme Homepage Mockup"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TAB 8: INVESTMENT & NEXT STEPS
+         ============================================================ -->
+    <div class="tab-content" id="tab-investment">
+      <div class="tab-header">
+        <h1>Investment & Next Steps</h1>
+        <p>Transparent cost breakdown and clear path forward</p>
+      </div>
+      <div class="tab-body">
+
+        <!-- Year 1 Cost Comparison -->
+        <h2 class="mb-20">Year 1 Cost Comparison</h2>
+        <div class="table-wrapper mb-32">
+          <table class="cost-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th class="impulse-col">Impulse &#11088;</th>
+                <th class="local-col">Local</th>
+                <th class="prestige-col">Prestige</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Theme License</strong></td>
+                <td class="impulse-col">$380 (&#8377;31,920)</td>
+                <td class="local-col">$380 (&#8377;31,920)</td>
+                <td class="prestige-col">$400 (&#8377;33,600)</td>
+              </tr>
+              <tr>
+                <td><strong>Custom Development</strong></td>
+                <td class="impulse-col">&#8377;4,17,500 (167 hrs)</td>
+                <td class="local-col">&#8377;3,82,500 (153 hrs)</td>
+                <td class="prestige-col">&#8377;5,67,700 (227 hrs)</td>
+              </tr>
+              <tr>
+                <td><strong>App Stack (12 months)</strong></td>
+                <td class="impulse-col">&#8377;2,32,700</td>
+                <td class="local-col">&#8377;2,07,700</td>
+                <td class="prestige-col">&#8377;2,32,700</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>Year 1 Total</strong></td>
+                <td class="impulse-col"><strong style="color: var(--color-primary); font-size: 18px;">&#8377;2,82,120</strong></td>
+                <td class="local-col"><strong style="color: #10b981; font-size: 18px;">&#8377;2,57,120</strong></td>
+                <td class="prestige-col"><strong style="font-size: 18px;">&#8377;3,33,800</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- What's Included -->
+        <h2 class="mb-20">What's Included</h2>
+        <div class="metrics-grid mb-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Full Shopify theme setup and configuration</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; 44 features implemented (Inbuilt + Custom + Apps)</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Mobile-first responsive design</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Page speed optimization (LCP target: &lt;2.5s)</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Technical SEO setup (schema, meta, sitemap)</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; 17+ app integrations configured</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Food-specific features (ingredients, nutrition, dietary filters)</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; 22 category navigation structure</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; 6 sub-brand pages and architecture</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Cart & checkout optimization</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Post-purchase flows (tracking, loyalty, referral)</div>
+          </div>
+          <div class="metric-card" style="padding: 16px 20px;">
+            <div style="font-size: 14px; color: var(--color-text);">&#10003; Training & handover documentation</div>
+          </div>
+        </div>
+
+        <!-- ROI Projection -->
+        <h2 class="mb-20">ROI Projection</h2>
+        <div class="callout success mb-32">
+          <h4>Return on Investment</h4>
+          <ul>
+            <li><strong>Investment:</strong> &#8377;2.82L (Impulse) &mdash; one-time setup + first year apps</li>
+            <li><strong>Current:</strong> 65.88% bounce rate, &lt;1% estimated conversion rate</li>
+            <li><strong>Target:</strong> &lt;45% bounce rate, 2-2.5% CVR (Food &amp; Beverages benchmark)</li>
+            <li><strong>Projected:</strong> 2-2.5x improvement in current revenue through conversion optimization</li>
+            <li><strong>Urgency:</strong> Every month of delay costs approximately 20% of potential revenue improvement</li>
+          </ul>
+        </div>
+
+        <!-- Timeline -->
+        <h2 class="mb-20">Timeline</h2>
+        <div class="steps-grid mb-32">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-title">Theme Setup & Configuration</div>
+            <div class="step-desc">Install theme, configure settings, set up brand colors and typography</div>
+            <div class="step-date">Week 1</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-title">Homepage + Collection Pages</div>
+            <div class="step-desc">Build homepage sections, category pages, navigation, and mega menu</div>
+            <div class="step-date">Week 2</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-title">PDP + Cart + Checkout</div>
+            <div class="step-desc">Product page layout, cart optimization, checkout flow, trust elements</div>
+            <div class="step-date">Week 3</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-title">Food-Specific + Integrations</div>
+            <div class="step-desc">Nutritional info, dietary filters, app integrations, payment gateways</div>
+            <div class="step-date">Week 4</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-title">Testing + Speed Optimization</div>
+            <div class="step-desc">QA testing, page speed optimization, mobile testing, SEO setup</div>
+            <div class="step-date">Week 5</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">6</div>
+            <div class="step-title">Launch + Post-Launch</div>
+            <div class="step-desc">Go-live, monitoring, bug fixes, post-launch support (buffer week)</div>
+            <div class="step-date">Week 6</div>
+          </div>
+        </div>
+
+        <!-- Next Steps -->
+        <h2 class="mb-20">Next Steps</h2>
+        <div class="steps-grid mb-32" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-title">Select Theme</div>
+            <div class="step-desc">Choose Impulse, Local, or Prestige (or take a day to review)</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-title">Share Feedback</div>
+            <div class="step-desc">Any changes to the homepage layouts?</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-title">Share Assets</div>
+            <div class="step-desc">Product images for final Figma mockups</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-title">Sign Agreement</div>
+            <div class="step-desc">SOW with scope, timeline, payment schedule</div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-title">Kickoff</div>
+            <div class="step-desc">4-6 week build, your new store goes live</div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+          <h2>Ready to Transform Your Store?</h2>
+          <p>KLF Nirmal has been trusted for 80 years. Let's build a digital presence worthy of that legacy.</p>
+          <a href="mailto:team@growisto.com" class="cta-button">Get in Touch</a>
+          <div class="cta-contact">
+            <span>Email: <a href="mailto:team@growisto.com">team@growisto.com</a></span>
+          </div>
+          <div style="margin-top: 32px; opacity: 0.6; font-size: 12px;">Powered by Growisto</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- end .main-content -->
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+    // --------------------------------------------------------
+    // Password Authentication (SHA-256)
+    // --------------------------------------------------------
+    // Pre-computed SHA-256 hash will be set on init
+    let CORRECT_HASH = '';
+
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    // Compute the correct hash at startup
+    (async function initHash() {
+      CORRECT_HASH = await sha256('klfnirmal2026');
+    })();
+
+    // Check session on load
+    if (sessionStorage.getItem('klf_auth') === 'true') {
+      document.getElementById('passwordOverlay').classList.add('hidden');
+    }
+
+    document.getElementById('passwordForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var passwordInput = document.getElementById('passwordInput');
+      var password = passwordInput.value;
+      var hash = await sha256(password);
+
+      if (hash === CORRECT_HASH) {
+        sessionStorage.setItem('klf_auth', 'true');
+        document.getElementById('passwordOverlay').classList.add('hidden');
+      } else {
+        var errorMsg = document.getElementById('errorMsg');
+        errorMsg.classList.add('visible');
+        passwordInput.classList.add('shake');
+        setTimeout(function() {
+          passwordInput.classList.remove('shake');
+        }, 300);
+      }
+    });
+
+    // --------------------------------------------------------
+    // Tab Switching
+    // --------------------------------------------------------
+    function switchTab(tabId) {
+      // Hide all tabs
+      var tabs = document.querySelectorAll('.tab-content');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+      }
+
+      // Deactivate all nav items
+      var navItems = document.querySelectorAll('.nav-item');
+      for (var i = 0; i < navItems.length; i++) {
+        navItems[i].classList.remove('active');
+      }
+
+      // Show selected tab
+      var selectedTab = document.getElementById('tab-' + tabId);
+      if (selectedTab) {
+        selectedTab.classList.add('active');
+      }
+
+      // Activate nav item
+      var selectedNav = document.querySelector('[data-tab="' + tabId + '"]');
+      if (selectedNav) {
+        selectedNav.classList.add('active');
+      }
+
+      // Update URL hash
+      history.replaceState(null, '', '#' + tabId);
+
+      // Lazy load iframes
+      var iframes = document.querySelectorAll('#tab-' + tabId + ' iframe[data-src]');
+      for (var i = 0; i < iframes.length; i++) {
+        if (!iframes[i].getAttribute('src')) {
+          iframes[i].src = iframes[i].getAttribute('data-src');
+        }
+      }
+
+      // Close mobile sidebar if open
+      if (window.innerWidth <= 1024) {
+        closeSidebar();
+      }
+
+      // Scroll to top
+      var mainContent = document.querySelector('.main-content');
+      if (mainContent) {
+        mainContent.scrollTop = 0;
+      }
+      window.scrollTo(0, 0);
+    }
+
+    // --------------------------------------------------------
+    // Mobile Sidebar Toggle
+    // --------------------------------------------------------
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('sidebarOverlay').classList.toggle('visible');
+      document.getElementById('hamburger').classList.toggle('active');
+    }
+
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebarOverlay').classList.remove('visible');
+      document.getElementById('hamburger').classList.remove('active');
+    }
+
+    // --------------------------------------------------------
+    // Viewport Toggle (Desktop / Mobile) for Mockup Tabs
+    // --------------------------------------------------------
+    function setViewport(tabId, mode) {
+      var container = document.getElementById('mockup-' + tabId);
+      if (container) {
+        container.className = 'mockup-container ' + mode;
+      }
+
+      // Update button active states
+      var buttons = document.querySelectorAll('#tab-' + tabId + ' .viewport-btn');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+        if (buttons[i].getAttribute('data-mode') === mode) {
+          buttons[i].classList.add('active');
+        }
+      }
+    }
+
+    // --------------------------------------------------------
+    // Accordion Toggle
+    // --------------------------------------------------------
+    function toggleAccordion(el) {
+      var item = el.parentElement;
+      item.classList.toggle('open');
+    }
+
+    // --------------------------------------------------------
+    // Hash Routing on Load
+    // --------------------------------------------------------
+    window.addEventListener('load', function() {
+      var hash = window.location.hash.slice(1);
+      if (hash && document.getElementById('tab-' + hash)) {
+        switchTab(hash);
+      }
+    });
+
+    // --------------------------------------------------------
+    // Handle hash change (back/forward browser navigation)
+    // --------------------------------------------------------
+    window.addEventListener('hashchange', function() {
+      var hash = window.location.hash.slice(1);
+      if (hash && document.getElementById('tab-' + hash)) {
+        switchTab(hash);
+      }
+    });
+  </script>
+
+</body>
+</html>
